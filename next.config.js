@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Enable static exports
+  // Remove static export as it's causing routing issues
   images: {
-    unoptimized: true, // Required for static export
+    domains: ['localhost', 'vercel.app'],
+    unoptimized: true,
   },
-  // Remove PostHog related config since we removed PostHog
+  // Ensure proper routing in production
+  trailingSlash: true,
+  // Disable static exports
+  // output: 'export',
 };
 
 module.exports = nextConfig; 
