@@ -8,8 +8,11 @@ const nextConfig = {
   },
   // Ensure proper routing in production
   trailingSlash: true,
-  // Disable static exports
-  // output: 'export',
+  // Webpack configuration to handle module resolution
+  webpack: (config, { isServer }) => {
+    // Add any necessary webpack configurations
+    return config;
+  },
 };
 
 module.exports = nextConfig; 
