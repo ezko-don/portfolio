@@ -15,7 +15,7 @@ export default function AboutSection() {
       <h2 className="text-2xl font-bold mb-6">About</h2>
       <div className="max-w-none">
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-          Hello, World! I am Esther Kadenge — a passionate Knowledge Manager and System Developer at Strathmore University,
+          Hello, World! I am Esther Zawadi — a passionate Knowledge Manager and System Developer at Strathmore University,
           dedicated to bridging the gap between technology and knowledge management while creating innovative solutions.
         </p>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">

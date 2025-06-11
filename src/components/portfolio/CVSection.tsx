@@ -153,18 +153,18 @@ export default function CVSection() {
           {/* Header/Contact Info */}
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
-              Esther Kadenge
+              Esther Zawadi
             </h2>
             <h3 className="text-xl text-gray-600 dark:text-gray-400 mb-6">
               Knowledge Manager & System Developer | Community Leader
             </h3>
             <div className="flex justify-center space-x-6 mb-6">
               <Link
-                href="mailto:esther.kadenge@strathmore.edu"
+                href="mailto:e.zawadi@strathmore.edu"
                 className="flex items-center gap-2 text-gray-600 hover:text-pink-500 dark:text-gray-400 transition-colors"
               >
                 <Icon icon="solar:letter-bold" />
-                esther.kadenge@strathmore.edu
+                e.zawadi@strathmore.edu
               </Link>
               <Link
                 href="tel:+254708314494"

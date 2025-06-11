@@ -8,6 +8,6 @@ export const siteConfig = {
   links: {
     github: "https://github.com/ezko-don",
     linkedin: "https://linkedin.com/in/esther-zawadi",
-    email: "esther.kadenge@strathmore.edu"
+    email: "e.zawadi@strathmore.edu"
   },
 } 
