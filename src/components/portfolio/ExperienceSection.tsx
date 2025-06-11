@@ -6,52 +6,71 @@ import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
-    role: "Founder & Leader",
-    company: "Tech Queens 254",
-    period: "Current",
-    type: "Leadership",
-    companyIcon: "solar:crown-bold",
-    companyColor: "from-pink-500 to-purple-600",
-    description: "Leading a dynamic girls tech movement dedicated to empowering young women in technology through coding education, mentorship, and community building.",
-    achievements: [
-      "Founded and leading a tech community for girls",
-      "Organizing coding workshops and training sessions",
-      "Providing mentorship and career guidance",
-      "Building a supportive network for women in tech"
-    ],
-    technologies: ["Community Building", "Tech Education", "Mentorship", "Event Management", "Leadership"]
-  },
-  {
-    role: "Intern",
+    role: "Knowledge Manager & System Developer",
     company: "Strathmore University",
-    period: "Current",
-    type: "Internship",
-    companyIcon: "solar:buildings-bold",
-    companyColor: "from-blue-500 to-purple-600",
-    description: "Contributing to various technological initiatives and gaining hands-on experience in institutional operations at Strathmore University.",
+    period: "2024 - Present",
+    type: "Full-Time",
+    companyIcon: "mdi:school",
+    companyColor: "from-pink-500 to-purple-600",
+    description: "Leading knowledge management initiatives and developing software solutions while managing cloud infrastructure at Strathmore University. Responsible for both technical development and knowledge management strategies.",
     achievements: [
-      "Actively participating in university tech projects",
-      "Learning and applying new technologies",
-      "Collaborating with different departments",
-      "Contributing to digital transformation initiatives"
+      "Architected and deployed Equipment Management & Tracking System serving 15+ staff",
+      "Achieved 40% reduction in manual tracking errors through system implementation",
+      "Optimized database performance by 25% through query optimization",
+      "Managing and optimizing institutional cloud storage systems",
+      "Leading system integration and optimization projects",
+      "Implementing comprehensive knowledge management strategies"
     ],
-    technologies: ["Web Development", "Software Development", "Project Management", "Digital Tools", "Tech Support"]
+    technologies: ["PHP", "Laravel", "Cloud Infrastructure", "System Development", "Database Optimization", "Knowledge Management"]
   },
   {
-    role: "Student",
+    role: "Founder & Community Leader",
+    company: "TechQueens254",
+    period: "2023 - Present",
+    type: "Community Leadership",
+    companyIcon: "mdi:crown",
+    companyColor: "from-purple-500 to-pink-600",
+    description: "Founded and leading a vibrant community of women in technology, fostering growth, learning, and networking opportunities for female tech enthusiasts in Kenya.",
+    achievements: [
+      "Building and managing an active community of women in technology",
+      "Organizing workshops, mentorship sessions, and networking events",
+      "Creating opportunities for skill development and career growth",
+      "Fostering an inclusive environment for women in tech",
+      "Facilitating knowledge sharing and peer learning initiatives"
+    ],
+    technologies: ["Community Building", "Event Management", "Mentorship", "Technical Leadership", "Public Speaking"]
+  },
+  {
+    role: "BBIT Student",
     company: "Strathmore University",
     period: "Current",
     type: "Full-time",
     companyColor: "from-purple-500 to-pink-600",
-    companyIcon: "solar:graduation-bold",
-    description: "Pursuing studies in computer science and technology, focusing on building a strong foundation in software development and digital innovation.",
+    companyIcon: "mdi:book-education",
+    description: "Pursuing a Bachelor of Business Information Technology (BBIT) degree, combining business acumen with technical expertise in information systems and software development.",
     achievements: [
-      "Engaging in comprehensive computer science curriculum",
-      "Participating in student tech projects",
-      "Learning modern development technologies",
-      "Building practical software development skills"
+      "Maintaining strong academic performance",
+      "Applying business and IT concepts in practical projects",
+      "Developing enterprise software solutions",
+      "Participating in business technology initiatives"
     ],
-    technologies: ["Programming", "Computer Science", "Software Engineering", "Database Management", "Web Technologies"]
+    technologies: ["Business Analysis", "Information Systems", "Software Development", "Enterprise Solutions"]
+  },
+  {
+    role: "Diploma Graduate",
+    company: "Strathmore University",
+    period: "Completed",
+    type: "Full-time",
+    companyColor: "from-blue-500 to-purple-600",
+    companyIcon: "mdi:certificate",
+    description: "Successfully completed a diploma program, establishing a strong foundation in business information technology and practical technical skills.",
+    achievements: [
+      "Graduated with strong academic standing",
+      "Completed practical technical projects",
+      "Developed core IT competencies",
+      "Built foundation for further studies"
+    ],
+    technologies: ["Information Technology", "Business Studies", "Technical Skills", "Project Management"]
   }
 ];
 
@@ -111,11 +130,11 @@ export default function ExperienceSection() {
 
       <div className="relative z-10">
         <SectionHeader
-          tagText="Educational Journey"
-          tagIcon="solar:graduation-bold"
+          tagText="Professional Journey"
+          tagIcon="solar:case-bold"
           heading="Experience"
           showUnderline={false}
-          description="My academic journey and experiences at Strathmore University"
+          description="My professional experience and community leadership initiatives"
           centered={true}
         />
 
@@ -178,7 +197,7 @@ export default function ExperienceSection() {
                       initial={{ opacity: 0, x: -30 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.4 }}
-                      className="text-lg md:text-xl text-blue-600 dark:text-blue-400 font-semibold"
+                      className="text-lg md:text-xl text-pink-600 dark:text-pink-400 font-semibold"
                     >
                       {exp.company}
                     </motion.p>
@@ -202,12 +221,12 @@ export default function ExperienceSection() {
                     className="space-y-3 md:space-y-4"
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
-                      <Icon icon="solar:cup-star-bold" className="text-amber-500" width={22} height={22} />
-                      Key Achievements
+                      <Icon icon="solar:cup-star-bold" className="text-pink-500" width={22} height={22} />
+                      Key Activities
                     </h4>
 
                     <div className="space-y-2 md:space-y-3">
-                      {exp.achievements.map((achievement, achIndex) => (
+                      {exp.achievements?.map((achievement, achIndex) => (
                         <motion.div
                           key={achIndex}
                           initial={{ opacity: 0, x: -20 }}
@@ -215,7 +234,7 @@ export default function ExperienceSection() {
                           transition={{ delay: 0.7 + achIndex * 0.1 }}
                           className="flex items-start gap-3 md:gap-4 group/achievement hover:translate-x-1 md:hover:translate-x-2 transition-transform duration-300"
                         >
-                          <div className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center mt-0.5 shadow-md md:shadow-lg group-hover/achievement:scale-110 transition-transform duration-300">
+                          <div className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center mt-0.5 shadow-md md:shadow-lg group-hover/achievement:scale-110 transition-transform duration-300">
                             <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white rounded-full" />
                           </div>
                           <span className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">
@@ -227,32 +246,23 @@ export default function ExperienceSection() {
                   </motion.div>
 
                   {/* Technologies */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.8 }}
-                    className="space-y-3 md:space-y-4"
-                  >
-                    <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
-                      <Icon icon="solar:programming-bold" className="text-purple-500" width={18} height={18} />
-                      Technologies & Skills
-                    </h4>
-
-                    <div className="flex flex-wrap gap-2 md:gap-3">
+                  {exp.technologies && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.8 }}
+                      className="flex flex-wrap gap-2 md:gap-3"
+                    >
                       {exp.technologies.map((tech, techIndex) => (
-                        <motion.span
+                        <span
                           key={techIndex}
-                          initial={{ opacity: 0, scale: 0 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          transition={{ delay: 0.9 + techIndex * 0.05 }}
-                          whileHover={{ scale: 1.05, y: -2 }}
-                          className="px-3 py-1.5 md:px-4 md:py-2 bg-gray-100/80 dark:bg-gray-800/50 text-gray-800 dark:text-gray-200 rounded-lg md:rounded-xl font-medium text-xs md:text-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-blue-50/80 dark:hover:bg-blue-900/20 transition-all duration-300"
+                          className="px-3 py-1 text-sm md:text-base bg-gradient-to-br from-pink-50 to-purple-50 dark:from-pink-900/10 dark:to-purple-900/10 border border-pink-100/50 dark:border-pink-800/50 rounded-full text-gray-700 dark:text-gray-300"
                         >
                           {tech}
-                        </motion.span>
+                        </span>
                       ))}
-                    </div>
-                  </motion.div>
+                    </motion.div>
+                  )}
                 </div>
               </div>
 
@@ -267,41 +277,6 @@ export default function ExperienceSection() {
               )}
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Experience Summary Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.5 }}
-          viewport={{ once: true }}
-          className="mt-16 md:mt-24 text-center px-4 md:px-6"
-        >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-4xl mx-auto">
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">5+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Years Experience</div>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">50+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Projects Completed</div>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30 transition-all duration-500 sm:col-span-2 lg:col-span-1"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">91%</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Success Rate</div>
-            </motion.div>
-          </div>
         </motion.div>
       </div>
     </motion.section>

@@ -8,103 +8,102 @@ import SectionHeader from "./SectionHeader";
 const projects = [
   {
     title: "Equipment Management System",
-    subtitle: "Asset Tracking & Management",
-    description: "A comprehensive equipment management and tracking system designed to streamline asset management, maintenance scheduling, and inventory control. Features real-time tracking, detailed reporting, and user-friendly interface.",
+    subtitle: "Asset Tracking and Management Platform",
+    description: "A comprehensive system for tracking and managing institutional equipment, providing real-time monitoring and efficient asset management capabilities.",
     features: [
-      "Real-time equipment tracking",
-      "Maintenance scheduling",
-      "Inventory management",
-      "User role management",
-      "Equipment check-in/out",
-      "Reporting and analytics",
-      "QR code integration",
-      "Email notifications"
+      "Real-time equipment tracking and status monitoring",
+      "Asset check-in/check-out management",
+      "Equipment maintenance scheduling",
+      "User role-based access control",
+      "Equipment history and usage analytics",
+      "QR code integration for quick asset identification",
+      "Automated notifications for maintenance and returns",
+      "Detailed reporting and analytics dashboard"
     ],
     deliverables: [
-      "Full-stack web application",
-      "User authentication system",
-      "Equipment database",
-      "Maintenance tracking",
-      "Reporting system",
-      "Mobile-responsive design",
-      "Admin dashboard",
-      "API documentation"
+      "Full-featured equipment management platform",
+      "User and admin dashboards",
+      "Equipment tracking system",
+      "Maintenance scheduling module",
+      "Reporting and analytics tools",
+      "Mobile-responsive interface",
+      "Role-based access control system"
     ],
-    tech: ["PHP", "Laravel", "MySQL", "JavaScript", "Bootstrap", "jQuery", "Apache", "Git"],
-    github: "https://github.com/ezko-don",
+    tech: ["PHP", "Laravel", "MySQL", "JavaScript", "Bootstrap", "QR Code API", "REST API", "JWT Authentication"],
+    github: "https://github.com/ezko-don/equipment-management",
     live: "http://192.168.170.221/",
-    gradient: "from-blue-500 to-purple-500",
+    gradient: "from-emerald-500 to-teal-500",
     status: "Live",
-    category: "Web Development",
+    category: "Web Application",
     highlight: "Featured",
-    timeline: "3 months",
-    clientType: "Academic Project"
+    timeline: "4 months",
+    clientType: "Institution"
   },
   {
-    title: "Portfolio Website",
-    subtitle: "Personal Portfolio Website",
-    description: "A modern and responsive portfolio website showcasing my academic journey, skills, and projects. Built with Next.js and styled with a beautiful pink and purple theme.",
+    title: "Personal Portfolio Website",
+    subtitle: "Modern Developer Portfolio",
+    description: "A modern, responsive portfolio website showcasing my projects, skills, and professional journey. Built with Next.js and featuring a beautiful UI with smooth animations.",
     features: [
-      "Responsive design for all devices",
-      "Modern UI/UX with smooth animations",
-      "Dark/Light mode support",
-      "Interactive project showcase",
+      "Modern and responsive design",
+      "Dark/light mode support",
+      "Smooth page transitions and animations",
+      "Interactive tech stack showcase",
+      "Project portfolio with live demos",
+      "Professional experience timeline",
       "Contact form integration",
-      "Performance optimized",
-      "SEO friendly",
-      "Easy content management"
+      "SEO optimized content"
     ],
     deliverables: [
-      "Fully functional portfolio website",
-      "Responsive design implementation",
-      "Content management system",
-      "Contact form functionality",
-      "Performance optimization",
-      "SEO optimization",
-      "Documentation"
+      "Responsive portfolio website",
+      "Project showcase section",
+      "Skills and experience display",
+      "Contact information integration",
+      "Performance optimized build",
+      "Cross-browser compatibility",
+      "Mobile-first design"
     ],
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React", "Apache", "Git", "GitHub"],
-    github: "https://github.com/ezko-don",
-    live: "http://192.168.170.221/",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React", "Vercel"],
+    github: "https://github.com/ezko-don/portfolio",
+    live: "https://estherzawadi.vercel.app",
     gradient: "from-pink-500 to-purple-500",
     status: "Live",
-    category: "Web Development",
-    highlight: "Featured",
-    timeline: "2 months",
-    clientType: "Personal Project"
+    category: "Personal Website",
+    highlight: "Latest",
+    timeline: "2 weeks",
+    clientType: "Personal"
   },
   {
-    title: "University Projects",
-    subtitle: "Academic Coursework and Assignments",
-    description: "A collection of various academic projects and assignments completed during my studies at Strathmore University, demonstrating my growth and learning in computer science and software development.",
+    title: "Tech Queens 254",
+    subtitle: "Women in Tech Community Platform",
+    description: "A dynamic platform for the Tech Queens 254 community, empowering young women in technology through coding education, mentorship, and networking opportunities.",
     features: [
-      "Database management systems",
-      "Web development projects",
-      "Programming assignments",
-      "Software engineering tasks",
-      "UI/UX design projects",
-      "Data analysis work",
-      "Team collaborations",
-      "Research projects"
+      "Community member profiles and networking",
+      "Event management and registration",
+      "Resource library for learning materials",
+      "Mentorship program matching system",
+      "Blog and success stories section",
+      "Workshop and training schedules",
+      "Community forum and discussions",
+      "Project showcase gallery"
     ],
     deliverables: [
-      "Course project implementations",
-      "Technical documentation",
-      "Project presentations",
-      "Code repositories",
-      "Research papers",
-      "Team project contributions",
-      "Project reports"
+      "Community platform website",
+      "Member management system",
+      "Event booking system",
+      "Resource management",
+      "Mentorship matching algorithm",
+      "Mobile-responsive design",
+      "Social media integration"
     ],
-    tech: ["Java", "Python", "SQL", "HTML/CSS", "JavaScript", "Git", "Database Systems", "Web Technologies"],
-    github: "https://github.com/ezko-don",
-    live: "",
+    tech: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap", "REST API", "Social Media APIs"],
+    github: "https://github.com/ezko-don/techqueens254",
+    live: "https://techqueens254.org",
     gradient: "from-purple-500 to-pink-500",
-    status: "Ongoing",
-    category: "Academic",
-    highlight: "Learning",
-    timeline: "Ongoing",
-    clientType: "University"
+    status: "Live",
+    category: "Community Platform",
+    highlight: "Featured",
+    timeline: "3 months",
+    clientType: "Non-Profit"
   }
 ];
 
@@ -159,19 +158,19 @@ export default function ProjectsSection() {
         <motion.div
           variants={floatVariants}
           animate="animate"
-          className="absolute top-5 md:top-20 right-2 md:right-16 w-12 sm:w-16 md:w-32 h-12 sm:h-16 md:h-32 bg-gradient-to-br from-pink-400/15 md:from-pink-400/20 to-purple-400/15 md:to-purple-400/20 rounded-full blur-xl md:blur-4xl"
+          className="absolute top-5 md:top-20 right-2 md:right-16 w-12 sm:w-16 md:w-32 h-12 sm:h-16 md:h-32 bg-gradient-to-br from-purple-400/15 md:from-purple-400/20 to-pink-400/15 md:to-pink-400/20 rounded-full blur-xl md:blur-4xl"
         />
         <motion.div
           variants={floatVariants}
           animate="animate"
           style={{ animationDelay: "2s" }}
-          className="absolute bottom-5 md:bottom-20 left-2 md:left-16 w-16 sm:w-20 md:w-40 h-16 sm:h-20 md:h-40 bg-gradient-to-br from-purple-400/10 md:from-purple-400/15 to-pink-400/10 md:to-pink-400/15 rounded-full blur-xl md:blur-2xl"
+          className="absolute bottom-5 md:bottom-20 left-2 md:left-16 w-16 sm:w-20 md:w-40 h-16 sm:h-20 md:h-40 bg-gradient-to-br from-blue-400/10 md:from-blue-400/15 to-cyan-400/10 md:to-cyan-400/15 rounded-full blur-xl md:blur-2xl"
         />
         <motion.div
           variants={floatVariants}
           animate="animate"
           style={{ animationDelay: "4s" }}
-          className="hidden lg:block absolute top-1/3 right-1/3 w-20 h-20 bg-gradient-to-br from-pink-400/20 to-purple-400/20 rounded-full blur-xl"
+          className="hidden lg:block absolute top-1/3 right-1/3 w-20 h-20 bg-gradient-to-br from-green-400/20 to-emerald-400/20 rounded-full blur-xl"
         />
       </div>
 
@@ -184,10 +183,10 @@ export default function ProjectsSection() {
       >
         {/* Section Header */}
         <SectionHeader
-          tagText="Project Showcase"
-          tagIcon="solar:graduation-bold"
-          heading="My Projects"
-          description="Explore my academic projects and personal work in software development"
+          tagText="Portfolio Showcase"
+          tagIcon="solar:code-square-bold"
+          heading="Featured Projects"
+          description="Discover my latest work in web development, AI integration, and digital innovation"
           showUnderline={true}
           centered={true}
         />

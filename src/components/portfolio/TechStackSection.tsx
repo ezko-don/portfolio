@@ -15,183 +15,232 @@ interface TechItem {
 }
 
 const techStackData: Record<string, TechItem[]> = {
-  "Programming Languages": [
+  "Backend": [
+    {
+      name: "Node.js",
+      icon: "devicon:nodejs",
+      level: "Expert",
+      category: "Backend",
+      description: "JavaScript runtime for server-side applications",
+      yearsUsed: 4
+    },
     {
       name: "Python",
       icon: "devicon:python",
       level: "Expert",
-      category: "Programming Languages",
-      description: "General-purpose programming language",
-      yearsUsed: 3
+      category: "Backend",
+      description: "Versatile language for backend and data science",
+      yearsUsed: 5
+    },
+    {
+      name: "Django",
+      icon: "material-icon-theme:django",
+      level: "Intermediate",
+      category: "Backend",
+      description: "High-level Python web framework",
+      yearsUsed: 2
     },
     {
       name: "PHP",
       icon: "devicon:php",
-      level: "Intermediate",
-      category: "Programming Languages",
-      description: "Server-side scripting language",
+      level: "Expert",
+      category: "Backend",
+      description: "Server-side scripting language for web development",
       yearsUsed: 3
     },
-    {
-      name: "Java",
-      icon: "devicon:java",
-      level: "Intermediate",
-      category: "Programming Languages",
-      description: "Object-oriented programming language",
-      yearsUsed: 3
-    },
-    {
-      name: "JavaScript",
-      icon: "devicon:javascript",
-      level: "Intermediate",
-      category: "Programming Languages",
-      description: "Language for web development",
-      yearsUsed: 3
-    },
-    {
-      name: "SQL",
-      icon: "vscode-icons:file-type-sql",
-      level: "Intermediate",
-      category: "Programming Languages",
-      description: "Database query language",
-      yearsUsed: 3
-    },
-  ],
-  "Web Development": [
     {
       name: "Laravel",
       icon: "devicon:laravel",
-      level: "Intermediate",
-      category: "Web Development",
-      description: "PHP web application framework",
+      level: "Expert",
+      category: "Backend",
+      description: "PHP web application framework with elegant syntax",
       yearsUsed: 3
     },
-    {
-      name: "Django",
-      icon: "devicon:django",
-      level: "Intermediate",
-      category: "Web Development",
-      description: "Python web framework",
-      yearsUsed: 3
-    },
-    {
-      name: "HTML",
-      icon: "vscode-icons:file-type-html",
-      level: "Intermediate",
-      category: "Web Development",
-      description: "Standard markup language for web pages",
-      yearsUsed: 3
-    },
-    {
-      name: "CSS",
-      icon: "vscode-icons:file-type-css",
-      level: "Intermediate",
-      category: "Web Development",
-      description: "Style sheet language for web design",
-      yearsUsed: 3
-    },
+  ],
+  "Frontend": [
     {
       name: "React",
       icon: "skill-icons:react-dark",
-      level: "Intermediate",
-      category: "Web Development",
-      description: "JavaScript library for building user interfaces",
-      yearsUsed: 3
+      level: "Expert",
+      category: "Frontend",
+      description: "Building modern, interactive user interfaces",
+      yearsUsed: 4
     },
     {
       name: "Next.js",
       icon: "devicon:nextjs",
-      level: "Intermediate",
-      category: "Web Development",
-      description: "React framework for production",
-      yearsUsed: 3
-    },
-  ],
-  "AI & Machine Learning": [
-    {
-      name: "Prompt Engineering",
-      icon: "carbon:ai-status",
       level: "Expert",
-      category: "AI & Machine Learning",
-      description: "AI prompt design and optimization",
+      category: "Frontend",
+      description: "Full-stack React framework for production apps",
       yearsUsed: 3
     },
     {
-      name: "Machine Learning",
-      icon: "carbon:machine-learning",
-      level: "Intermediate",
-      category: "AI & Machine Learning",
-      description: "AI and ML model development",
+      name: "TypeScript",
+      icon: "devicon:typescript",
+      level: "Expert",
+      category: "Frontend",
+      description: "Type-safe JavaScript for scalable applications",
+      yearsUsed: 4
+    },
+    {
+      name: "JavaScript",
+      icon: "devicon:javascript",
+      level: "Expert",
+      category: "Frontend",
+      description: "Core language for web development",
+      yearsUsed: 5
+    },
+    {
+      name: "Tailwind CSS",
+      icon: "logos:tailwindcss-icon",
+      level: "Expert",
+      category: "Frontend",
+      description: "Utility-first CSS framework for rapid UI development",
       yearsUsed: 3
     },
     {
-      name: "AI Integration",
-      icon: "carbon:ai-results",
+      name: "Flutter",
+      icon: "devicon:flutter",
       level: "Intermediate",
-      category: "AI & Machine Learning",
-      description: "Integrating AI services and APIs",
-      yearsUsed: 3
-    }
-  ],
-  "Tools & Technologies": [
-    {
-      name: "Git",
-      icon: "devicon:git",
-      level: "Intermediate",
-      category: "Tools & Technologies",
-      description: "Version control system",
-      yearsUsed: 3
-    },
-    {
-      name: "GitHub",
-      icon: "devicon:github",
-      level: "Intermediate",
-      category: "Tools & Technologies",
-      description: "Code hosting and collaboration platform",
-      yearsUsed: 3
-    },
-    {
-      name: "VS Code",
-      icon: "devicon:vscode",
-      level: "Intermediate",
-      category: "Tools & Technologies",
-      description: "Code editor for development",
-      yearsUsed: 3
-    },
-    {
-      name: "Postman",
-      icon: "devicon:postman",
-      level: "Intermediate",
-      category: "Tools & Technologies",
-      description: "API development and testing tool",
-      yearsUsed: 3
+      category: "Frontend",
+      description: "Cross-platform mobile app development",
+      yearsUsed: 2
     },
   ],
-  "Databases": [
-    {
-      name: "MySQL",
-      icon: "logos:mysql",
-      level: "Intermediate",
-      category: "Databases",
-      description: "Relational database management system",
-      yearsUsed: 3
-    },
+  "Database": [
     {
       name: "PostgreSQL",
       icon: "logos:postgresql",
-      level: "Intermediate",
-      category: "Databases",
-      description: "Advanced open-source database",
+      level: "Expert",
+      category: "Database",
+      description: "Advanced open-source relational database",
       yearsUsed: 3
     },
     {
       name: "MongoDB",
       icon: "devicon:mongodb",
-      level: "Intermediate",
-      category: "Databases",
-      description: "NoSQL database",
+      level: "Expert",
+      category: "Database",
+      description: "NoSQL document database",
       yearsUsed: 3
     },
+    {
+      name: "MySQL",
+      icon: "logos:mysql",
+      level: "Intermediate",
+      category: "Database",
+      description: "Popular open-source relational database",
+      yearsUsed: 3
+    },
+    {
+      name: "Redis",
+      icon: "devicon:redis",
+      level: "Intermediate",
+      category: "Database",
+      description: "In-memory data structure store",
+      yearsUsed: 2
+    },
+    {
+      name: "Prisma",
+      icon: "skill-icons:prisma",
+      level: "Expert",
+      category: "Database",
+      description: "Next-generation ORM for Node.js and TypeScript",
+      yearsUsed: 2
+    },
+  ],
+  "Cloud & DevOps": [
+    {
+      name: "AWS",
+      icon: "skill-icons:aws-light",
+      level: "Intermediate",
+      category: "Cloud & DevOps",
+      description: "Amazon Web Services cloud platform",
+      yearsUsed: 2
+    },
+    {
+      name: "GCP",
+      icon: "skill-icons:gcp-light",
+      level: "Intermediate",
+      category: "Cloud & DevOps",
+      description: "Google Cloud Platform services",
+      yearsUsed: 2
+    },
+    {
+      name: "Firebase",
+      icon: "vscode-icons:file-type-firebase",
+      level: "Expert",
+      category: "Cloud & DevOps",
+      description: "Google's app development platform",
+      yearsUsed: 3
+    },
+    {
+      name: "Docker",
+      icon: "devicon:docker",
+      level: "Intermediate",
+      category: "Cloud & DevOps",
+      description: "Containerization platform",
+      yearsUsed: 2
+    },
+    {
+      name: "Git",
+      icon: "devicon:git",
+      level: "Expert",
+      category: "Cloud & DevOps",
+      description: "Version control system",
+      yearsUsed: 5
+    },
+  ],
+  "AI & Integration": [
+    {
+      name: "Prompt Engineering",
+      icon: "carbon:ai-status",
+      level: "Expert",
+      category: "AI & Integration",
+      description: "Expert in crafting and optimizing AI prompts for various LLMs",
+      yearsUsed: 2
+    },
+    {
+      name: "OpenAI",
+      icon: "simple-icons:openai",
+      level: "Expert",
+      category: "AI & Integration",
+      description: "AI-powered applications and advanced prompt design",
+      yearsUsed: 2
+    },
+    {
+      name: "LangChain",
+      icon: "simple-icons:langchain",
+      level: "Expert",
+      category: "AI & Integration",
+      description: "Framework for developing LLM applications",
+      yearsUsed: 1
+    },
+    {
+      name: "Vercel AI SDK",
+      icon: "skill-icons:vercel-light",
+      level: "Expert",
+      category: "AI & Integration",
+      description: "Building AI-powered streaming UIs",
+      yearsUsed: 1
+    },
+    {
+      name: "Stripe",
+      icon: "logos:stripe",
+      level: "Intermediate",
+      category: "AI & Integration",
+      description: "Payment processing integration",
+      yearsUsed: 2
+    },
+    {
+      // vector database
+      name: "Vector Database",
+      icon: "ph:vector-three-duotone",
+      level: "Intermediate",
+      category: "AI & Integration",
+      description: "Vector database for storing and querying embeddings",
+      yearsUsed: 1
+    }
   ],
 };
 

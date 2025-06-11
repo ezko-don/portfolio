@@ -9,8 +9,9 @@ export default function TypewriterRole() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const roles = [
+    "Student at Strathmore University",
+    "Technology Intern",
     "Software Developer",
-    "Software Engineer",
     "Tech Enthusiast"
   ];
 
@@ -87,10 +88,10 @@ export default function TypewriterRole() {
           className="absolute inset-0 rounded-2xl"
           animate={{
             background: [
-              "linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #db2777 100%)",
-              "linear-gradient(135deg, #8b5cf6 0%, #db2777 50%, #7c3aed 100%)",
-              "linear-gradient(135deg, #db2777 0%, #7c3aed 50%, #ec4899 100%)",
-              "linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #db2777 100%)"
+              "linear-gradient(135deg, #ec4899 0%, #d946ef 50%, #a855f7 100%)",
+              "linear-gradient(135deg, #d946ef 0%, #a855f7 50%, #ec4899 100%)",
+              "linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #d946ef 100%)",
+              "linear-gradient(135deg, #ec4899 0%, #d946ef 50%, #a855f7 100%)"
             ]
           }}
           transition={{ duration: 8, repeat: Infinity }}

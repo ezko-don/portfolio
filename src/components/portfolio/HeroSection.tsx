@@ -45,8 +45,8 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 dark:from-pink-300 dark:via-purple-300 dark:to-pink-300 bg-clip-text text-transparent z-10">
-            Esther Zawadi
+          <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 bg-clip-text text-transparent z-10">
+            Esther Kadenge
           </span>
         </motion.h1>
 
@@ -60,10 +60,11 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          Student at Strathmore University and currently interning at the institution
+          A passionate <span className="text-pink-500">student</span> at <span className="text-purple-500">Strathmore University</span>,
+          currently <span className="text-pink-500">interning</span> at the institution.
         </motion.p>
 
-        {/* Social Links - keeping exactly the same */}
+        {/* Social Links */}
         <motion.div
           className="flex flex-wrap gap-3 justify-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -72,48 +73,35 @@ export default function HeroSection() {
         >
           {[
             { href: "https://github.com/ezko-don", icon: "simple-icons:github", label: "GitHub", color: "hover:text-gray-900 dark:hover:text-white" },
-            { href: "https://www.linkedin.com/in/esther-zawadi-8a23782b7/", icon: "skill-icons:linkedin", label: "LinkedIn", color: "hover:text-blue-600" },
+            { href: "https://linkedin.com/in/esther-kadenge", icon: "skill-icons:linkedin", label: "LinkedIn", color: "hover:text-blue-600" },
             { href: "mailto:esther.kadenge@strathmore.edu", icon: "material-icon-theme:email", label: "Email", color: "hover:text-pink-600" }
           ].map((link) => (
             <motion.div key={link.label} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href={link.href}
-                className={`inline-flex items-center gap-2 px-4 py-2 bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 backdrop-blur-sm rounded-full text-sm transition-all duration-300 border border-gray-300/50 dark:border-gray-600/50 shadow-lg hover:shadow-xl ${link.color}`}
+                className={`inline-flex items-center gap-2 px-4 py-2 bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 backdrop-blur-sm rounded-full text-sm transition-all duration-300 border border-pink-200/50 dark:border-purple-600/50 shadow-lg hover:shadow-xl ${link.color}`}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Icon icon={link.icon} width={18} height={18} />
                 {link.label}
               </Link>
             </motion.div>
           ))}
-        </motion.div>
 
-        {/* Skills Preview */}
-        {/* <motion.div
-          className="flex flex-wrap justify-center gap-3 mb-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2 }}
-        >
-          {[
-            { icon: "skill-icons:react-dark", label: "React" },
-            { icon: "skill-icons:typescript", label: "TypeScript" },
-            { icon: "skill-icons:nextjs-dark", label: "Next.js" },
-            { icon: "skill-icons:nodejs-dark", label: "Node.js" },
-            { icon: "skill-icons:tailwindcss-dark", label: "Tailwind" }
-          ].map((skill, index) => (
-            <motion.div
-              key={skill.label}
-              className="flex items-center gap-2 px-3 py-2 bg-gray-50/80 dark:bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-200/50 dark:border-gray-700/30"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2 + index * 0.1 }}
-              whileHover={{ scale: 1.05, y: -2 }}
+          {/* Separate CV Download Button with Enhanced Styling */}
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <a
+              href="/Esther_Kadenge_CV.pdf"
+              className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:opacity-90"
+              download
+              rel="noopener noreferrer"
             >
-              <Icon icon={skill.icon} width={16} height={16} />
-              <span className="text-sm text-gray-700 dark:text-gray-300">{skill.label}</span>
-            </motion.div>
-          ))}
-        </motion.div> */}
+              <Icon icon="solar:document-download-bold" width={18} height={18} />
+              Download CV
+            </a>
+          </motion.div>
+        </motion.div>
 
         {/* Status */}
         <motion.div
@@ -129,7 +117,7 @@ export default function HeroSection() {
           />
           <Link href="#contact">
             <span className="text-pink-700 dark:text-pink-300 text-sm font-medium">
-              Currently interning at Strathmore University
+              Knowledge Manager & System Developer at Strathmore University
             </span>
           </Link>
         </motion.div>
@@ -152,7 +140,7 @@ export default function HeroSection() {
               });
             }
           }}
-          className="flex flex-col items-center gap-2 text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300"
+          className="flex flex-col items-center gap-2 text-gray-500 dark:text-gray-400 cursor-pointer hover:text-pink-700 dark:hover:text-pink-200 transition-colors duration-300"
           animate={{ y: [0, -8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           whileHover={{ scale: 1.05 }}
@@ -167,7 +155,7 @@ export default function HeroSection() {
               icon="mdi:chevron-down"
               width={24}
               height={24}
-              className="text-gray-400 dark:text-gray-500"
+              className="text-pink-400 dark:text-pink-500"
             />
           </motion.div>
         </motion.button>

@@ -15,18 +15,19 @@ export default function AboutSection() {
       <h2 className="text-2xl font-bold mb-6">About</h2>
       <div className="max-w-none">
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-          Hello, World! I am Muhammad Ramazan — a passionate Full Stack Developer & UI/UX enthusiast
-          dedicated to creating high-performance, user-centric software solutions with intuitive and engaging designs.
+          Hello, World! I am Esther Kadenge — a passionate Knowledge Manager and System Developer at Strathmore University,
+          dedicated to bridging the gap between technology and knowledge management while creating innovative solutions.
         </p>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-          With 5+ years of experience, I specialize in building scalable web and mobile applications using
-          React, Next.js, TypeScript, and modern development technologies. I thrive on turning complex problems
-          into elegant solutions that users love.
+          In my current role, I lead knowledge management initiatives and develop software solutions that enhance operational efficiency.
+          I specialize in system development, cloud infrastructure management, and implementing comprehensive knowledge management strategies.
+          My recent achievement includes architecting an Equipment Management & Tracking System that reduced manual tracking errors by 40%.
         </p>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-          Beyond work, I love exploring emerging technologies, contributing to open-source projects, and
-          mentoring aspiring developers. I believe in continuous learning and staying at the forefront of
-          technological innovation.
+          Beyond my professional work, I am the founder of TechQueens254, a community dedicated to empowering women in technology.
+          Through this initiative, I organize workshops, mentorship programs, and networking events to create opportunities for
+          female tech enthusiasts in Kenya. I am passionate about fostering an inclusive tech environment and facilitating
+          knowledge sharing among peers.
         </p>
       </div>
     </motion.section>

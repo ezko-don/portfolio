@@ -70,12 +70,15 @@ export default function ContactSection() {
       className="mb-16"
     >
       <div className="max-w-4xl mx-auto">
+
+
         <SectionHeader
-          heading="Get in Touch"
-          description="I'm always interested in learning about new opportunities and connecting with fellow students and professionals in tech."
+          heading="Let's Work Together"
+          description="Ready to bring your ideas to life? I'm always excited to work on interesting projects and collaborate with amazing people. Let's create something extraordinary together."
           tagIcon='solar:chat-line-bold'
           tagText='Contact'
           centered={true}
+
         />
 
         {/* Contact Form */}
@@ -104,7 +107,7 @@ export default function ContactSection() {
                   required
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-all duration-300"
                   placeholder="Your full name"
                 />
               </motion.div>
@@ -125,7 +128,7 @@ export default function ContactSection() {
                   required
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-all duration-300"
                   placeholder="your.email@example.com"
                 />
               </motion.div>
@@ -147,8 +150,8 @@ export default function ContactSection() {
                 rows={5}
                 value={formData.message}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-all duration-300 resize-none"
-                placeholder="Your message..."
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-all duration-300 resize-none"
+                placeholder="Tell me about your project or idea..."
               />
             </motion.div>
 
@@ -164,7 +167,7 @@ export default function ContactSection() {
                 disabled={isSubmitting}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white rounded-2xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl shadow-pink-500/25 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-2xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl shadow-blue-500/25 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <>
@@ -191,18 +194,19 @@ export default function ContactSection() {
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="relative mt-4 p-4 bg-pink-50 dark:bg-pink-900/20 border border-pink-200 dark:border-pink-800 rounded-xl"
+                  className="relative mt-4 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl"
                 >
-                  <div className="flex items-center gap-2 text-pink-700 dark:text-pink-400">
+                  <div className="flex items-center gap-2 text-green-700 dark:text-green-400">
                     <Icon icon="solar:check-circle-bold" width={20} height={20} />
                     <span className="font-medium">Message sent successfully!</span>
                   </div>
-                  <p className="text-pink-600 text-left dark:text-pink-500 text-sm mt-1">
+                  <p className="text-green-600 text-left dark:text-green-500 text-sm mt-1">
                     Thank you for reaching out. I&apos;ll get back to you soon!
                   </p>
+                  {/* add a button to close the message */}
                   <button
                     onClick={() => setSubmitStatus('idle')}
-                    className="absolute top-1 right-1 text-pink-500 rounded-md"
+                    className="absolute top-1 right-1  text-red-500 rounded-md"
                   >
                     <Icon icon="solar:close-circle-bold" width={20} height={20} />
                   </button>
@@ -222,9 +226,10 @@ export default function ContactSection() {
                   <p className="text-red-600 text-left dark:text-red-500 text-sm mt-1">
                     Please try again or contact me directly at esther.kadenge@strathmore.edu
                   </p>
+                  {/* add a button to close the message */}
                   <button
                     onClick={() => setSubmitStatus('idle')}
-                    className="absolute top-1 right-1 text-red-500 rounded-md"
+                    className="absolute top-1 right-1  text-red-500 rounded-md"
                   >
                     <Icon icon="solar:close-circle-bold" width={20} height={20} />
                   </button>
@@ -242,38 +247,73 @@ export default function ContactSection() {
           transition={{ duration: 0.8, delay: 1.1 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-600 dark:text-gray-400 mb-6">Or connect with me on:</p>
-          <div className="flex justify-center gap-4">
-                          <Link
-                href="https://github.com/ezko-don"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-gray-100 dark:bg-gray-800 rounded-xl hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-all duration-300"
-              >
-                <Icon icon="simple-icons:github" width={24} height={24} className="text-gray-700 dark:text-gray-300" />
-              </Link>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">Or reach out directly:</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                href="https://www.linkedin.com/in/esther-zawadi-8a23782b7/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-gray-100 dark:bg-gray-800 rounded-xl hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-all duration-300"
-            >
-              <Icon icon="simple-icons:linkedin" width={24} height={24} className="text-gray-700 dark:text-gray-300" />
-            </Link>
-            <Link
-              href="mailto:esther.kadenge@strathmore.edu"
-              className="p-3 bg-gray-100 dark:bg-gray-800 rounded-xl hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-all duration-300"
-            >
-              <Icon icon="solar:letter-bold" width={24} height={24} className="text-gray-700 dark:text-gray-300" />
-            </Link>
-            <Link
-              href="tel:0708314494"
-              className="p-3 bg-gray-100 dark:bg-gray-800 rounded-xl hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-all duration-300"
-            >
-              <Icon icon="solar:phone-bold" width={24} height={24} className="text-gray-700 dark:text-gray-300" />
-            </Link>
+                href="mailto:lightify6@gmail.com"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border-2 border-gray-300 hover:border-gray-400 dark:border-gray-600 dark:hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                <Icon icon="solar:mailbox-bold-duotone" width={18} height={18} />
+                Send Email
+              </Link>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                href="/CV.pdf"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border-2 border-gray-300 hover:border-gray-400 dark:border-gray-600 dark:hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                <Icon icon="solar:download-outline" width={18} height={18} />
+                Download CV
+              </Link>
+            </motion.div>
           </div>
         </motion.div>
+
+        <div className="text-center mt-8">
+          <p className="text-gray-600 dark:text-gray-400 mb-6">Or connect with me on social media:</p>
+          <div className="flex justify-center space-x-6 mb-8">
+            <Link
+              href="mailto:esther.kadenge@strathmore.edu"
+              className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
+            >
+              <Icon icon="solar:letter-bold" width={24} height={24} />
+              <span className="sr-only">Email</span>
+            </Link>
+            <Link
+              href="https://github.com/ezko-don"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-300"
+            >
+              <Icon icon="solar:github-bold" width={24} height={24} />
+              <span className="sr-only">GitHub</span>
+            </Link>
+            <Link
+              href="https://chat.whatsapp.com/EjJwPmrLYwV9HAwGExVHfA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-green-500 dark:text-gray-400 dark:hover:text-green-400 transition-colors duration-300"
+            >
+              <Icon icon="ri:whatsapp-fill" width={24} height={24} />
+              <span className="sr-only">TechQueens254 WhatsApp</span>
+            </Link>
+          </div>
+          <div className="text-center mb-8">
+            <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Join TechQueens254</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">Be part of our vibrant community of women in technology!</p>
+            <Link
+              href="https://chat.whatsapp.com/EjJwPmrLYwV9HAwGExVHfA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-500 to-purple-600 text-white hover:opacity-90 transition-opacity"
+            >
+              <Icon icon="ri:whatsapp-fill" className="mr-2" />
+              Join Our WhatsApp Community
+            </Link>
+          </div>
+        </div>
       </div>
     </motion.section>
   );

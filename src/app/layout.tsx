@@ -1,3 +1,4 @@
+import { PostHogProvider } from "@/components/PostHogProvider";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
@@ -6,13 +7,13 @@ import "./globals.css";
 const inter = Space_Grotesk({ subsets: ["latin"], weight: ["500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Esther Zawadi - Student & Tech Enthusiast",
-  description: "Portfolio of Esther Zawadi, a passionate student at Strathmore University, exploring software development and technology through studies and internship.",
-  keywords: "Esther Zawadi, Student, Software Development, Strathmore University, Portfolio, Technology",
-  authors: [{ name: "Esther Zawadi" }],
+  title: "Esther Kadenge - Full Stack Software Engineer",
+  description: "Portfolio of Esther Kadenge, a passionate full-stack software engineer and knowledge manager at Strathmore University, specializing in system development and cloud infrastructure.",
+  keywords: "Esther Kadenge, Full Stack Developer, System Development, Knowledge Management, PHP, Laravel, Cloud Infrastructure, Portfolio",
+  authors: [{ name: "Esther Kadenge" }],
   openGraph: {
-    title: "Esther Zawadi - Student & Tech Enthusiast",
-    description: "Portfolio of Esther Zawadi, a passionate student exploring software development and technology at Strathmore University.",
+    title: "Esther Kadenge - Full Stack Software Engineer",
+    description: "Portfolio of Esther Kadenge, a passionate full-stack software engineer and knowledge manager at Strathmore University.",
     type: "website",
   },
 };
@@ -25,10 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <ThemeProvider>
-          {/* <AnimatedBackground /> */}
-          {children}
-        </ThemeProvider>
+        <PostHogProvider>
+          <ThemeProvider>
+            {/* <AnimatedBackground /> */}
+            {children}
+          </ThemeProvider>
+        </PostHogProvider>
       </body>
     </html>
   );

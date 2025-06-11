@@ -13,6 +13,7 @@ interface Testimonial {
   rating: number;
   project: string;
   avatar: string;
+  phone: string;
   featured?: boolean;
 }
 
@@ -29,43 +30,16 @@ interface FeaturedTestimonialProps {
 
 const testimonials = [
   {
-    content: "Ramzan is great! He is very skillful and fast learner, just what you need in a developer.",
-    author: "Mohammed Swellam",
-    role: "CEO",
-    company: "Geeky Air",
+    content: "Esther has demonstrated exceptional skills in system development and knowledge management. Her work on our equipment management system has greatly improved our operational efficiency.",
+    author: "Victor Anyura",
+    role: "Supervisor",
+    company: "Strathmore University",
     rating: 5,
-    project: "Events based Web App",
-    avatar: "MS",
+    project: "Equipment Management System",
+    avatar: "VA",
+    phone: "0729365230",
     featured: true
-  },
-  {
-    content: "Ramzan produced some really amazing work on the backend. He demonstrated his proficiency and efficiency by using Node.js and Javascript to successfully import a very large dataset into a MySQL database.",
-    author: "Arnel Bisnar",
-    role: "Product Manager",
-    company: "Solid Lift Parts Inc",
-    rating: 5,
-    project: "Backend Development",
-    avatar: "AB"
-  },
-  {
-    content: "It's been great to work with him! Fast, active and hardworking! Ramzan architected checkersvip.com from ground up with great attention to detail and great design. He is a great team player and a great developer.",
-    author: "Gilberto Cisneros",
-    role: "CEO",
-    company: "Checkersvip.com",
-    rating: 5,
-    project: "JavaScript Applications",
-    avatar: "MR"
-  },
-  {
-    content: "We had a fantastic experience working with him on a recent project. He consistently delivered high-quality work, showed exceptional attention to detail, and communicated effectively throughout the process.",
-    author: "Jacek Jllaskowski",
-    role: "Project Manger ",
-    company: "Golem",
-    rating: 5,
-    project: "Full Stack Development",
-    avatar: "ED"
-  },
-
+  }
 ];
 
 const TestimonialCard = ({ testimonial, index, isHovered, onHover }: TestimonialCardProps) => {
@@ -159,10 +133,10 @@ const TestimonialCard = ({ testimonial, index, isHovered, onHover }: Testimonial
                   {testimonial.author}
                 </div>
                 <div className="text-gray-600 dark:text-gray-400 text-sm font-medium">
-                  {testimonial.role}
+                  {testimonial.role} at {testimonial.company}
                 </div>
                 <div className="text-gray-500 dark:text-gray-500 text-sm">
-                  {testimonial.company}
+                  {testimonial.phone}
                 </div>
               </div>
             </div>

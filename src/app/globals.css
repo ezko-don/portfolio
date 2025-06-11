@@ -16,37 +16,37 @@
 		--popover-foreground: 280 50% 20%;
 		--primary: 320 70% 55%;
 		--primary-foreground: 300 100% 99%;
-		--secondary: 280 60% 95%;
+		--secondary: 280 60% 90%;
 		--secondary-foreground: 280 50% 20%;
-		--muted: 280 60% 95%;
-		--muted-foreground: 280 30% 45%;
-		--accent: 320 70% 95%;
+		--muted: 280 60% 90%;
+		--muted-foreground: 280 30% 40%;
+		--accent: 320 70% 90%;
 		--accent-foreground: 280 50% 20%;
 		--destructive: 0 84.2% 60.2%;
 		--destructive-foreground: 300 100% 99%;
-		--border: 280 30% 90%;
-		--input: 280 30% 90%;
+		--border: 320 70% 90%;
+		--input: 320 70% 90%;
 		--ring: 320 70% 55%;
 		--radius: 0.5rem;
 	}
 
 	.dark {
-		--background: 280 50% 5%;
-		--foreground: 300 100% 95%;
-		--card: 280 50% 5%;
-		--card-foreground: 300 100% 95%;
-		--popover: 280 50% 5%;
-		--popover-foreground: 300 100% 95%;
+		--background: 280 50% 10%;
+		--foreground: 300 100% 99%;
+		--card: 280 50% 10%;
+		--card-foreground: 300 100% 99%;
+		--popover: 280 50% 10%;
+		--popover-foreground: 300 100% 99%;
 		--primary: 320 70% 65%;
-		--primary-foreground: 280 50% 5%;
-		--secondary: 280 30% 15%;
-		--secondary-foreground: 300 100% 95%;
-		--muted: 280 30% 15%;
+		--primary-foreground: 280 50% 10%;
+		--secondary: 280 30% 20%;
+		--secondary-foreground: 300 100% 99%;
+		--muted: 280 30% 20%;
 		--muted-foreground: 280 30% 70%;
-		--accent: 320 70% 15%;
-		--accent-foreground: 300 100% 95%;
+		--accent: 320 70% 30%;
+		--accent-foreground: 300 100% 99%;
 		--destructive: 0 62.8% 30.6%;
-		--destructive-foreground: 300 100% 95%;
+		--destructive-foreground: 300 100% 99%;
 		--border: 280 30% 20%;
 		--input: 280 30% 20%;
 		--ring: 320 70% 65%;
@@ -65,15 +65,15 @@
 
 @layer components {
 	.gradient-text {
-		@apply bg-gradient-to-r from-pink-400 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+		@apply bg-gradient-to-r from-pink-400 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent;
 	}
 
 	.glass-effect {
-		@apply bg-white/10 backdrop-blur-sm border border-white/20;
+		@apply bg-white/10 backdrop-blur-sm border border-pink-200/20;
 	}
 
 	.hover-glow {
-		@apply transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25;
+		@apply transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/25;
 	}
 
 	.section-padding {
@@ -113,26 +113,26 @@
 }
 
 ::-webkit-scrollbar-track {
-	background: #f1f5f9;
+	background: #fdf4ff;
 }
 
 .dark ::-webkit-scrollbar-track {
-	background: #1a1a1a;
+	background: #2d1a3d;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(180deg, #ec4899, #8b5cf6);
+	background: linear-gradient(180deg, #ec4899, #a855f7);
 	border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(180deg, #db2777, #7c3aed);
+	background: linear-gradient(180deg, #db2777, #9333ea);
 }
 
 /* Custom selection */
 ::selection {
 	background-color: rgba(236, 72, 153, 0.3);
-	color: #1f2937;
+	color: #4a044e;
 }
 
 .dark ::selection {
@@ -202,7 +202,7 @@ textarea:focus-visible {
 }
 
 .gradient-animation {
-	background: linear-gradient(-45deg, #ec4899, #8b5cf6, #db2777, #7c3aed);
+	background: linear-gradient(-45deg, #3b82f6, #8b5cf6, #ec4899, #10b981);
 	background-size: 400% 400%;
 	animation: gradient-shift 15s ease infinite;
 }

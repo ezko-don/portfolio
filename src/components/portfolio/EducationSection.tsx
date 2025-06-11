@@ -13,7 +13,7 @@ const education = [
     description: "Bachelor of Business Information Technology (Evening Exempt Program)",
     status: "In Progress",
     icon: "solar:graduation-bold",
-    gradient: "from-blue-500 to-indigo-600"
+    gradient: "from-pink-500 to-purple-600"
   },
   {
     degree: "DBIT",
@@ -23,7 +23,7 @@ const education = [
     description: "Diploma in Business Information Technology",
     status: "Completed",
     icon: "solar:diploma-verified-bold",
-    gradient: "from-green-500 to-emerald-600"
+    gradient: "from-pink-500 to-purple-600"
   }
 ];
 
@@ -33,8 +33,7 @@ export default function EducationSection() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.1,
+        staggerChildren: 0.2,
       },
     },
   };
@@ -45,8 +44,7 @@ export default function EducationSection() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94],
+        duration: 0.5,
       },
     },
   };
@@ -54,65 +52,75 @@ export default function EducationSection() {
   return (
     <motion.section
       id="education"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.2 }}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
       viewport={{ once: true }}
       className="mb-16 md:mb-24 lg:mb-32"
     >
-      <div className="relative z-10">
-        <SectionHeader
-          tagText="Academic Journey"
-          tagIcon="solar:graduation-bold"
-          heading="Education"
-          description="My academic qualifications and educational background"
-          showUnderline={true}
-          centered={true}
-        />
+      <SectionHeader
+        tagText="Education"
+        tagIcon="solar:graduation-bold"
+        heading="Academic Background"
+        description="My educational journey in technology and business"
+        centered={true}
+      />
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto space-y-8 px-4"
-        >
-          {education.map((edu, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300"
-            >
-              <div className="flex items-start gap-6">
-                <div className={`flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br ${edu.gradient} flex items-center justify-center shadow-lg`}>
-                  <Icon icon={edu.icon} className="text-white w-8 h-8" />
-                </div>
-                
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">{edu.degree}</h3>
-                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                      edu.status === "Completed" 
-                        ? "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400"
-                        : "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400"
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="max-w-4xl mx-auto space-y-6 md:space-y-8"
+      >
+        {education.map((item, index) => (
+          <motion.div
+            key={index}
+            variants={itemVariants}
+            className="p-6 md:p-8 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300"
+          >
+            <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+              {/* Icon */}
+              <div className={`w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-gradient-to-br ${item.gradient} flex items-center justify-center flex-shrink-0`}>
+                <Icon icon={item.icon} className="w-6 h-6 md:w-8 md:h-8 text-white" />
+              </div>
+
+              {/* Content */}
+              <div className="flex-grow">
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-2">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
+                    {item.degree}
+                  </h3>
+                  <div className="flex items-center gap-2">
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                      item.status === "Completed"
+                        ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
+                        : "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
                     }`}>
-                      {edu.status}
+                      {item.status}
                     </span>
                   </div>
-                  
-                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-2">{edu.institution}</p>
-                  <p className="text-gray-500 dark:text-gray-400 mb-3">{edu.description}</p>
-                  
-                  <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
-                    <Icon icon="solar:calendar-date-bold" className="w-5 h-5" />
-                    <span>{edu.period}</span>
+                </div>
+
+                <div className="text-gray-600 dark:text-gray-400 mb-2">
+                  <div className="flex items-center gap-2 text-sm">
+                    <Icon icon="solar:building-bold" className="w-4 h-4" />
+                    <span>{item.institution}</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm mt-1">
+                    <Icon icon="solar:calendar-bold" className="w-4 h-4" />
+                    <span>{item.period}</span>
                   </div>
                 </div>
+
+                <p className="text-gray-700 dark:text-gray-300 text-sm">
+                  {item.description}
+                </p>
               </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
     </motion.section>
   );
 } 

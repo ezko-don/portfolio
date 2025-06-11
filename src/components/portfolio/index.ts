@@ -1,12 +1,11 @@
 export { default as AboutSection } from './AboutSection';
 export { default as Background } from './Background';
-export { default as CertificationsSection } from './CertificationsSection';
+export { default as CertificatesSection } from './CertificatesSection';
 export { default as ContactSection } from './ContactSection';
-export { default as EducationSection } from './EducationSection';
+export { default as CVSection } from './CVSection';
 export { default as ExperienceSection } from './ExperienceSection';
 export { default as Footer } from './Footer';
 export { default as HeroSection } from './HeroSection';
-export { default as InitiativesSection } from './InitiativesSection';
 export { default as Navigation } from './Navigation';
 export { default as OverviewSection } from './OverviewSection';
 export { default as ProjectsSection } from './ProjectsSection';

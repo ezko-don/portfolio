@@ -2,16 +2,16 @@
 
 import {
   Background,
+  CertificatesSection,
   ContactSection,
-  EducationSection,
   ExperienceSection,
   Footer,
   HeroSection,
-  InitiativesSection,
   Navigation,
   OverviewSection,
   ProjectsSection,
   TechStackSection,
+  TestimonialsSection
 } from "@/components/portfolio";
 
 export default function Portfolio() {
@@ -30,20 +30,20 @@ export default function Portfolio() {
         {/* Overview Section */}
         <OverviewSection />
 
-        {/* Education Section */}
-        <EducationSection />
-
         {/* Tech Stack Section */}
         <TechStackSection />
 
         {/* Experience Section */}
         <ExperienceSection />
 
-        {/* Initiatives Section */}
-        <InitiativesSection />
-
         {/* Projects Section */}
         <ProjectsSection />
+
+        {/* Certificates Section */}
+        <CertificatesSection />
+
+        {/* Testimonials Section */}
+        <TestimonialsSection />
 
         {/* Contact Section */}
         <ContactSection />

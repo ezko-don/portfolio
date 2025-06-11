@@ -71,32 +71,44 @@ export default function OverviewSection() {
         />
       </div>
 
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="relative z-10"
-      >
-        {/* Section Header */}
+      <div className="relative z-10">
         <SectionHeader
           tagText="Get To Know Me"
           tagIcon="solar:user-heart-bold"
           heading="About Me"
-          description="Passionate student and tech enthusiast exploring the world of software development"
+          description="Passionate student exploring the world of technology and software development"
           showUnderline={true}
           centered={true}
         />
 
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-12 gap-6 md:gap-8 items-start px-4">
-
           {/* Main Profile Section */}
           <motion.div
             variants={itemVariants}
             className="lg:col-span-8"
           >
             <div className="space-y-6 md:space-y-8">
+              {/* Student Status Card */}
+              <div className="p-6 rounded-3xl bg-white dark:bg-gray-900 shadow-xl">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center">
+                    <Icon icon="solar:graduation-bold" className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Student</h3>
+                    <p className="text-pink-500 font-medium">Strathmore University</p>
+                    <span className="text-gray-500 text-sm">Current</span>
+                  </div>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  Pursuing my Bachelor of Business Information Technology (BBIT), focusing on integrating business knowledge with technical expertise in software development and digital solutions.
+                </p>
+                <div className="flex items-center gap-2">
+                  <Icon icon="solar:star-bold" className="text-pink-500 w-5 h-5" />
+                  <span className="text-gray-700 dark:text-gray-300 font-medium">BBIT Student</span>
+                </div>
+              </div>
 
               {/* Introduction Card */}
               <div className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-white/90 to-white/50 dark:from-gray-800/90 dark:to-gray-900/50 backdrop-blur-xl border border-white/30 dark:border-gray-700/40 shadow-2xl">
@@ -109,36 +121,39 @@ export default function OverviewSection() {
                   <div>
                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-gray-900 dark:text-white flex items-center gap-2 md:gap-3">
                       <span className="text-2xl sm:text-3xl md:text-4xl">👋</span>
-                      Hello, I&apos;m Esther Zawadi
+                      Hello, I&apos;m Esther Kadenge
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
-                      A dedicated <span className="font-bold text-pink-600 dark:text-pink-400">student</span> at
+                      A passionate <span className="font-bold text-pink-600 dark:text-pink-400">BBIT student</span> at
                       <span className="font-bold text-purple-600 dark:text-purple-400">
-                        &nbsp;Strathmore University</span> and currently
-                      <span className="font-bold text-pink-600 dark:text-pink-400"> interning</span> at the institution.
+                        &nbsp;Strathmore University</span>, currently
+                      <span className="font-bold text-pink-600 dark:text-pink-400">&nbsp;interning</span> at the institution.
                     </p>
                   </div>
 
-                  {/* Expanded About Content */}
-                  <div className="space-y-3 md:space-y-4 border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
-                    <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      I am passionate about technology and software development, currently exploring various aspects
-                      of computer science and programming through my studies and internship experience.
-                    </p>
-                    <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      Beyond academics, I enjoy learning new technologies, participating in tech communities,
-                      and working on personal projects to enhance my skills and knowledge in the field.
-                    </p>
+                  {/* About Content */}
+                  <div className="space-y-3 md:space-y-4">
+                    <div className="space-y-4">
+                      <p className="text-gray-600 dark:text-gray-400">
+                        Currently pursuing my Bachelor of Business Information Technology (BBIT) at Strathmore University while working as a Knowledge Manager and System Developer. I combine my technical expertise with business acumen to deliver innovative solutions.
+                      </p>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        As the founder and leader of TechQueens254, I'm passionate about empowering women in technology. Our community provides a platform for learning, networking, and growth for female tech enthusiasts in Kenya.
+                      </p>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        My focus areas include system development, knowledge management, and cloud infrastructure, with a strong emphasis on creating practical solutions that bridge technology and business needs.
+                      </p>
+                    </div>
                   </div>
 
                   {/* Skills Highlight */}
                   <div className="border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
                     <h4 className="font-bold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
-                      <Icon icon="solar:lightning-bold" className="text-pink-500 w-4 md:w-5 h-4 md:h-5" width={20} height={20} />
+                      <Icon icon="solar:lightning-bold" className="text-pink-500 w-4 md:w-5 h-4 md:h-5" />
                       Areas of Interest
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
-                      {["Web Development", "Software Engineering", "UI/UX Design", "Database Management", "Cloud Computing", "Mobile Development", "Data Analysis", "Project Management", "Tech Innovation"].map((skill, index) => (
+                      {["Web Development", "Software Engineering", "UI/UX Design", "Database Management", "Cloud Computing", "Mobile Development", "Data Analysis", "Project Management"].map((skill, index) => (
                         <motion.span
                           key={skill}
                           initial={{ opacity: 0, scale: 0 }}
@@ -174,8 +189,8 @@ export default function OverviewSection() {
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Pursuing my studies in computer science and technology, focusing on building a strong foundation
-                    in software development and digital innovation.
+                    Pursuing my studies in technology and computer science, focusing on building a strong foundation
+                    in software development and digital solutions.
                   </p>
                   <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
                     <Icon icon="solar:star-bold" className="text-yellow-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
@@ -190,129 +205,76 @@ export default function OverviewSection() {
                 >
                   <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
                     <div className="p-2 md:p-3 bg-purple-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:buildings-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
+                      <Icon icon="solar:laptop-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Intern</h4>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Technology Intern</h4>
                       <p className="text-purple-600 dark:text-purple-400 font-medium text-sm md:text-base">Strathmore University</p>
                       <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Current</p>
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Gaining hands-on experience in various aspects of technology and institutional operations
-                    while contributing to the university's digital initiatives.
+                    Gaining practical experience in technology and software development through hands-on projects
+                    and real-world applications.
                   </p>
                   <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
                     <Icon icon="solar:shield-check-bold" className="text-purple-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-purple-600 dark:text-purple-400">Technology Intern</span>
+                    <span className="font-semibold text-purple-600 dark:text-purple-400">Tech Enthusiast</span>
                   </div>
                 </motion.div>
               </div>
             </div>
           </motion.div>
 
-          {/* Enhanced Sidebar */}
-          <motion.div variants={itemVariants} className="lg:col-span-4 space-y-6 mt-6 lg:mt-0">
-            {/* Contact Card */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-50/90 to-pink-50/90 dark:from-purple-950/30 dark:to-pink-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
-              <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-                <Icon icon="solar:chat-round-dots-bold" className="text-purple-500 w-5 h-5" width={20} height={20} />
-                Let&apos;s Connect
-              </h4>
-              <div className="space-y-3">
-                <motion.a
-                  href="mailto:esther.kadenge@strathmore.edu"
-                  whileHover={{ scale: 1.02, x: 4 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
-                >
-                  <div className="p-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-md group-hover:from-pink-600 group-hover:to-purple-600 transition-all shadow-md">
-                    <Icon icon="solar:letter-bold" className="text-white w-4 h-4" width={16} height={16} />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white break-all">esther.kadenge@strathmore.edu</div>
-                  </div>
-                </motion.a>
-
-                <motion.div
-                  whileHover={{ scale: 1.02, x: 4 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
-                >
-                  <div className="p-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-md shadow-md">
-                    <Icon icon="solar:global-bold" className="text-white w-4 h-4" width={16} height={16} />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">Strathmore University</div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-
-            {/* Achievement Highlights */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-amber-50/90 to-yellow-50/90 dark:from-amber-950/30 dark:to-yellow-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
-              <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-                <Icon icon="solar:cup-star-bold" className="text-amber-600 w-5 h-5" width={20} height={20} />
-                Achievements
-              </h4>
-              <div className="space-y-4">
+          {/* Languages Section - Right Side */}
+          <motion.div
+            variants={itemVariants}
+            className="lg:col-span-4"
+          >
+            <div className="p-8 rounded-3xl bg-white dark:bg-gray-900 shadow-xl">
+              <h4 className="text-2xl font-semibold mb-6">Languages</h4>
+              <div className="space-y-6">
                 {[
-                  { icon: "solar:star-bold", text: "Top Rated on Upwork", color: "text-yellow-600" },
-                  { icon: "solar:cpu-bolt-bold-duotone", text: "Expert in AI Integration", color: "text-blue-600" },
-                  { icon: "solar:code-square-bold", text: "50+ Projects Delivered", color: "text-green-600" },
-                ].map((achievement, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 1.5 + index * 0.2 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-amber-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
-                  >
-                    <Icon icon={achievement.icon} className={`${achievement.color} w-5 h-5`} width={20} height={20} />
-                    <span className="text-sm font-medium text-gray-800 dark:text-gray-300">{achievement.text}</span>
-                  </motion.div>
+                  { name: "English", level: "Native", icon: "flag:gb-4x3" },
+                  { name: "Kiswahili", level: "Native", icon: "flag:ke-4x3" },
+                  { name: "French", level: "Professional", icon: "flag:fr-4x3" },
+                  { name: "German", level: "Professional", icon: "flag:de-4x3" }
+                ].map((language) => (
+                  <div key={language.name} className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <Icon icon={language.icon} className="w-6 h-6" />
+                      <span className="text-lg text-gray-900 dark:text-gray-100">{language.name}</span>
+                    </div>
+                    <span className="text-gray-500 dark:text-gray-400">{language.level}</span>
+                  </div>
                 ))}
               </div>
             </div>
 
-            {/* Available for Hire */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-50/90 to-cyan-50/90 dark:from-emerald-950/30 dark:to-cyan-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
-              <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-                <Icon icon="solar:rocket-bold" className="text-emerald-600 w-5 h-5" width={20} height={20} />
-                Available for Hire
+            {/* Contact Information */}
+            <div className="mt-6 p-8 rounded-3xl bg-white dark:bg-gray-900 shadow-xl">
+              <h4 className="flex items-center gap-2 text-2xl font-semibold mb-6">
+                <Icon icon="solar:chat-round-dots-bold" className="text-pink-500" />
+                Let's Connect
               </h4>
-              <div className="space-y-3.5">
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 2.0 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
-                >
-                  <Icon icon="solar:check-circle-bold" className="text-green-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Open to New Opportunities</span>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 2.2 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
-                >
-                  <Icon icon="solar:planet-2-bold" className="text-cyan-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Open to Relocation</span>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 2.4 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
-                >
-                  <Icon icon="solar:clock-circle-bold" className="text-blue-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Remote & On-site Available</span>
-                </motion.div>
+              <div className="space-y-4">
+                <a href="mailto:esther.kadenge@strathmore.edu" className="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-pink-500">
+                  <Icon icon="solar:letter-bold" className="w-5 h-5" />
+                  <span>esther.kadenge@strathmore.edu</span>
+                </a>
+                <a href="tel:+254708314494" className="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-pink-500">
+                  <Icon icon="solar:phone-bold" className="w-5 h-5" />
+                  <span>+254 708 314 494</span>
+                </a>
+                <div className="flex items-center gap-3 text-gray-800 dark:text-gray-200">
+                  <Icon icon="solar:map-point-bold" className="w-5 h-5" />
+                  <span>Strathmore University, Nairobi</span>
+                </div>
               </div>
             </div>
           </motion.div>
         </div>
-      </motion.div>
+      </div>
     </motion.section>
   );
 } 

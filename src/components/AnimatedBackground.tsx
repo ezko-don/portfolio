@@ -19,11 +19,11 @@ const AnimatedBackground = () => {
 
   useEffect(() => {
     const colors = [
+      "rgb(59, 130, 246)",   // blue-500
+      "rgb(139, 92, 246)",   // purple-500
       "rgb(236, 72, 153)",   // pink-500
-      "rgb(219, 39, 119)",   // pink-600
-      "rgb(147, 51, 234)",   // purple-600
-      "rgb(168, 85, 247)",   // purple-500
-      "rgb(192, 132, 252)",  // purple-400
+      "rgb(16, 185, 129)",   // emerald-500
+      "rgb(245, 158, 11)",   // amber-500
     ];
 
     const initialParticles: Particle[] = Array.from({ length: 50 }, (_, i) => ({
@@ -98,7 +98,7 @@ const AnimatedBackground = () => {
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-50/30 via-purple-50/20 to-pink-50/30 dark:from-pink-950/30 dark:via-purple-950/20 dark:to-pink-950/30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-pink-50/30 dark:from-blue-950/30 dark:via-purple-950/20 dark:to-pink-950/30" />
 
       {/* Geometric Shapes */}
       <div className="absolute inset-0">
@@ -111,7 +111,7 @@ const AnimatedBackground = () => {
             transition={{ delay: i * 0.2, duration: 2 }}
           >
             <motion.div
-              className={`w-${20 + i * 10} h-${20 + i * 10} border border-pink-500/20 dark:border-pink-400/20 rounded-full`}
+              className={`w-${20 + i * 10} h-${20 + i * 10} border border-blue-500/20 dark:border-blue-400/20 rounded-full`}
               style={{
                 left: `${10 + i * 15}%`,
                 top: `${5 + i * 10}%`,
@@ -181,8 +181,8 @@ const AnimatedBackground = () => {
         )}
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="rgb(236, 72, 153)" />
-            <stop offset="100%" stopColor="rgb(147, 51, 234)" />
+            <stop offset="0%" stopColor="rgb(59, 130, 246)" />
+            <stop offset="100%" stopColor="rgb(139, 92, 246)" />
           </linearGradient>
         </defs>
       </svg>
