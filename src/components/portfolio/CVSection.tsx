@@ -201,7 +201,7 @@ export default function CVSection() {
               Professional Summary
             </h3>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Dynamic software engineer and proven technical leader with hands-on experience building scalable web applications that solve real-world problems. Currently excelling in my final year at Strathmore University while simultaneously delivering production-ready systems that serve 15+ daily users. Passionate about leveraging technology for social impact, I've led teams of 10+, reduced operational inefficiencies by 40%, and pioneered women-in-tech initiatives.
+              Dynamic software engineer and proven technical leader with hands-on experience building scalable web applications that solve real-world problems. Currently excelling in my final year at Strathmore University while simultaneously delivering production-ready systems that serve 15+ daily users. Passionate about leveraging technology for social impact, I&apos;ve led teams of 10+, reduced operational inefficiencies by 40%, and pioneered women-in-tech initiatives.
             </p>
           </div>
 

@@ -73,12 +73,11 @@ export default function ContactSection() {
 
 
         <SectionHeader
-          heading="Let's Work Together"
-          description="Ready to bring your ideas to life? I'm always excited to work on interesting projects and collaborate with amazing people. Let's create something extraordinary together."
-          tagIcon='solar:chat-line-bold'
-          tagText='Contact'
+          tagText="Get in Touch"
+          tagIcon="solar:chat-round-dots-bold"
+          heading="Let&apos;s Work Together"
+          description="Ready to bring your ideas to life? I&apos;m always excited to work on interesting projects and collaborate with amazing people. Let&apos;s create something extraordinary together."
           centered={true}
-
         />
 
         {/* Contact Form */}

@@ -50,22 +50,6 @@ const certificates = [
   }
 ];
 
-// Update the interface to include badge
-interface Certificate {
-  title: string;
-  issuer: string;
-  date: string;
-  type: string;
-  description: string;
-  icon: string;
-  color: string;
-  badge?: {
-    image: string;
-    alt: string;
-    link: string;
-  };
-}
-
 export default function CertificatesSection() {
   return (
     <motion.section

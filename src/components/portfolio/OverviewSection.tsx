@@ -5,17 +5,6 @@ import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 
 export default function OverviewSection() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.1,
-      },
-    },
-  };
-
   const itemVariants = {
     hidden: { opacity: 0, y: 40, scale: 0.95 },
     visible: {
@@ -138,7 +127,7 @@ export default function OverviewSection() {
                         Currently pursuing my Bachelor of Business Information Technology (BBIT) at Strathmore University while working as a Knowledge Manager and System Developer. I combine my technical expertise with business acumen to deliver innovative solutions.
                       </p>
                       <p className="text-gray-600 dark:text-gray-400">
-                        As the founder and leader of TechQueens254, I'm passionate about empowering women in technology. Our community provides a platform for learning, networking, and growth for female tech enthusiasts in Kenya.
+                        As the founder and leader of TechQueens254, I&apos;m passionate about empowering women in technology. Our community provides a platform for learning, networking, and growth for female tech enthusiasts in Kenya.
                       </p>
                       <p className="text-gray-600 dark:text-gray-400">
                         My focus areas include system development, knowledge management, and cloud infrastructure, with a strong emphasis on creating practical solutions that bridge technology and business needs.
@@ -255,7 +244,7 @@ export default function OverviewSection() {
             <div className="mt-6 p-8 rounded-3xl bg-white dark:bg-gray-900 shadow-xl">
               <h4 className="flex items-center gap-2 text-2xl font-semibold mb-6">
                 <Icon icon="solar:chat-round-dots-bold" className="text-pink-500" />
-                Let's Connect
+                Let&apos;s Connect
               </h4>
               <div className="space-y-4">
                 <a href="mailto:esther.kadenge@strathmore.edu" className="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-pink-500">
