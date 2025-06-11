@@ -65,7 +65,7 @@ export default function OverviewSection() {
           tagText="Get To Know Me"
           tagIcon="solar:user-heart-bold"
           heading="About Me"
-          description="Passionate student exploring the world of technology and software development"
+          description="Passionate technology professional focused on innovative solutions and system development"
           showUnderline={true}
           centered={true}
         />
@@ -78,27 +78,6 @@ export default function OverviewSection() {
             className="lg:col-span-8"
           >
             <div className="space-y-6 md:space-y-8">
-              {/* Student Status Card */}
-              <div className="p-6 rounded-3xl bg-white dark:bg-gray-900 shadow-xl">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center">
-                    <Icon icon="solar:graduation-bold" className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Student</h3>
-                    <p className="text-pink-500 font-medium">Strathmore University</p>
-                    <span className="text-gray-500 text-sm">Current</span>
-                  </div>
-                </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Pursuing my Bachelor of Business Information Technology (BBIT), focusing on integrating business knowledge with technical expertise in software development and digital solutions.
-                </p>
-                <div className="flex items-center gap-2">
-                  <Icon icon="solar:star-bold" className="text-pink-500 w-5 h-5" />
-                  <span className="text-gray-700 dark:text-gray-300 font-medium">BBIT Student</span>
-                </div>
-              </div>
-
               {/* Introduction Card */}
               <div className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-white/90 to-white/50 dark:from-gray-800/90 dark:to-gray-900/50 backdrop-blur-xl border border-white/30 dark:border-gray-700/40 shadow-2xl">
                 {/* Decorative Elements */}
@@ -113,10 +92,10 @@ export default function OverviewSection() {
                       Hello, I&apos;m Esther Kadenge
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
-                      A passionate <span className="font-bold text-pink-600 dark:text-pink-400">BBIT student</span> at
+                      A passionate <span className="font-bold text-pink-600 dark:text-pink-400">Technology Professional</span> at
                       <span className="font-bold text-purple-600 dark:text-purple-400">
-                        &nbsp;Strathmore University</span>, currently
-                      <span className="font-bold text-pink-600 dark:text-pink-400">&nbsp;interning</span> at the institution.
+                        &nbsp;Strathmore University</span>, working as a
+                      <span className="font-bold text-pink-600 dark:text-pink-400">&nbsp;Knowledge Manager and System Developer</span>.
                     </p>
                   </div>
 
@@ -124,7 +103,7 @@ export default function OverviewSection() {
                   <div className="space-y-3 md:space-y-4">
                     <div className="space-y-4">
                       <p className="text-gray-600 dark:text-gray-400">
-                        Currently pursuing my Bachelor of Business Information Technology (BBIT) at Strathmore University while working as a Knowledge Manager and System Developer. I combine my technical expertise with business acumen to deliver innovative solutions.
+                        Working as a Knowledge Manager and System Developer at Strathmore University, I combine technical expertise with business acumen to deliver innovative solutions.
                       </p>
                       <p className="text-gray-600 dark:text-gray-400">
                         As the founder and leader of TechQueens254, I&apos;m passionate about empowering women in technology. Our community provides a platform for learning, networking, and growth for female tech enthusiasts in Kenya.
@@ -161,32 +140,7 @@ export default function OverviewSection() {
               </div>
 
               {/* Professional Roles Grid */}
-              <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-                <motion.div
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-pink-50/80 to-pink-100/50 dark:from-pink-950/30 dark:to-pink-900/20 backdrop-blur-sm border border-pink-200/50 dark:border-pink-800/30 shadow-xl flex flex-col"
-                >
-                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <div className="p-2 md:p-3 bg-pink-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:graduation-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Student</h4>
-                      <p className="text-pink-600 dark:text-pink-400 font-medium text-sm md:text-base">Strathmore University</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Current</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Pursuing my studies in technology and computer science, focusing on building a strong foundation
-                    in software development and digital solutions.
-                  </p>
-                  <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
-                    <Icon icon="solar:star-bold" className="text-yellow-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-pink-600 dark:text-pink-400">Computer Science Student</span>
-                  </div>
-                </motion.div>
-
+              <div className="grid md:grid-cols-1 gap-4 md:gap-6">
                 <motion.div
                   variants={itemVariants}
                   whileHover={{ scale: 1.02, y: -5 }}
@@ -197,18 +151,17 @@ export default function OverviewSection() {
                       <Icon icon="solar:laptop-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Technology Intern</h4>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Knowledge Manager & System Developer</h4>
                       <p className="text-purple-600 dark:text-purple-400 font-medium text-sm md:text-base">Strathmore University</p>
                       <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Current</p>
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Gaining practical experience in technology and software development through hands-on projects
-                    and real-world applications.
+                    Leading knowledge management initiatives and developing innovative systems while focusing on cloud infrastructure and database optimization.
                   </p>
                   <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
                     <Icon icon="solar:shield-check-bold" className="text-purple-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-purple-600 dark:text-purple-400">Tech Enthusiast</span>
+                    <span className="font-semibold text-purple-600 dark:text-purple-400">Tech Professional</span>
                   </div>
                 </motion.div>
               </div>
