@@ -3,7 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['localhost', 'vercel.app'],
-    unoptimized: true,
+    unoptimized: false,
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   // Ensure proper routing in production
   trailingSlash: true,
@@ -12,6 +14,9 @@ const nextConfig = {
     // Add any necessary webpack configurations
     return config;
   },
+  // Optimize for mobile performance
+  poweredByHeader: false,
+  compress: true,
 };
 
 module.exports = nextConfig; 
