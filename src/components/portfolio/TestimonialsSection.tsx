@@ -79,7 +79,7 @@ const TestimonialCard = ({ testimonial, index, isHovered, onHover }: Testimonial
       >
 
         {/* Main Card */}
-        <div className={`relative  h-full bg-gradient-to-br ${gradient} backdrop-blur-sm rounded-2xl p-6 `}>
+        <div className={`relative h-full bg-gradient-to-br ${gradient} backdrop-blur-sm rounded-2xl p-6`}>
 
 
           {/* Quote Icon with Background */}

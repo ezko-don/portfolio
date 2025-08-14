@@ -1,6 +1,6 @@
 export { default as AboutSection } from './AboutSection';
 export { default as Background } from './Background';
-export { default as CertificatesSection } from './CertificatesSection';
+export { default as CertificatesSection } from './CertificationsSection';
 export { default as ContactSection } from './ContactSection';
 export { default as CVSection } from './CVSection';
 export { default as ExperienceSection } from './ExperienceSection';

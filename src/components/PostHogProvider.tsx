@@ -11,7 +11,7 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!posthogKey) return
 
-    posthog.init(posthogKey, {
+    posthog.init(posthogKey as string, {
       api_host: "/ingest",
       ui_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
       capture_pageview: false, // We capture pageviews manually

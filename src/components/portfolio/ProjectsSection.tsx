@@ -73,6 +73,39 @@ const projects = [
     clientType: "Personal"
   },
   {
+    title: "NEP Kenya",
+    subtitle: "National Environment Platform - Kenya",
+    description: "The National Environment Platform Kenya (NEP-Kenya) is a multi-stakeholder platform that brings together diverse actors to advocate for environmental conservation, sustainable development, and climate action in Kenya.",
+    features: [
+      "Environmental advocacy and awareness campaigns",
+      "Multi-stakeholder platform coordination",
+      "Climate action initiatives and programs",
+      "Policy advocacy and research",
+      "Community engagement and education",
+      "Sustainable development project management",
+      "Environmental monitoring and reporting",
+      "Partnership and collaboration facilitation"
+    ],
+    deliverables: [
+      "Environmental advocacy platform",
+      "Climate action coordination system",
+      "Community engagement tools",
+      "Policy research and documentation",
+      "Stakeholder collaboration framework",
+      "Environmental awareness campaigns",
+      "Sustainable development initiatives"
+    ],
+    tech: ["Web Development", "Content Management", "Digital Advocacy", "Environmental Monitoring"],
+    github: "#",
+    live: "https://nepkenya.org/",
+    gradient: "from-green-500 to-emerald-500",
+    status: "Live",
+    category: "Environmental Platform",
+    highlight: "Impact",
+    timeline: "Ongoing",
+    clientType: "Environmental Organization"
+  },
+  {
     title: "Tech Queens 254",
     subtitle: "Women in Tech Community Platform",
     description: "A dynamic platform for the Tech Queens 254 community, empowering young women in technology through coding education, mentorship, and networking opportunities.",

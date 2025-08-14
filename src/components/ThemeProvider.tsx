@@ -26,10 +26,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // Update document class and save preference
+    const html = document.documentElement;
     if (theme === "dark") {
-      document.documentElement.classList.add("dark");
+      html.classList.add("dark");
+      html.style.colorScheme = "dark";
     } else {
-      document.documentElement.classList.remove("dark");
+      html.classList.remove("dark");
+      html.style.colorScheme = "light";
     }
     localStorage.setItem("theme", theme);
   }, [theme]);
