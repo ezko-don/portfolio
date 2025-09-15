@@ -14,25 +14,25 @@ type Course = {
 export default function CoursesSection() {
   const courses: Course[] = [
     {
-      title: "Python Programming",
-      institution: "Moringa School",
+      title: "Google Data Analytics Professional Certificate",
+      institution: "Google (Coursera)",
       year: "2023",
-      description: "Comprehensive Python programming course covering data structures, algorithms, and web development with Django and Flask.",
-      certificateUrl: "/certificates/python-certificate.png"
+      description: "Mastered data cleaning, analysis, and visualization using tools like SQL, Tableau, and R. Learned to make data-driven decisions and create visualizations to communicate insights.",
+      certificateUrl: "/certificates/google-data-analytics-certificate.png"
     },
     {
-      title: "Web Development",
-      institution: "Moringa School",
+      title: "IBM Data Science Professional Certificate",
+      institution: "IBM (Coursera)",
       year: "2023",
-      description: "Full-stack web development with HTML, CSS, JavaScript, React, Node.js, and MongoDB.",
-      certificateUrl: "/certificates/web-dev-certificate.png"
+      description: "Gained hands-on experience in data science and machine learning using Python, Jupyter notebooks, and popular data science libraries like pandas, NumPy, and scikit-learn.",
+      certificateUrl: "/certificates/ibm-data-science-certificate.png"
     },
     {
-      title: "Data Science",
-      institution: "Moringa School",
+      title: "AWS Certified Cloud Practitioner",
+      institution: "Amazon Web Services (AWS)",
       year: "2023",
-      description: "Data analysis, visualization, and machine learning using Python, Pandas, Matplotlib, and Scikit-learn.",
-      certificateUrl: "/certificates/data-science-certificate.png"
+      description: "Earned foundational knowledge of AWS Cloud concepts, services, security, architecture, pricing, and support. Demonstrated cloud fluency and understanding of AWS Cloud value.",
+      certificateUrl: "/certificates/aws-cloud-practitioner-certificate.png"
     }
   ];
 
