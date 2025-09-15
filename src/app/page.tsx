@@ -2,7 +2,6 @@
 
 import {
   Background,
-  CertificatesSection,
   ContactSection,
   ExperienceSection,
   Footer,
@@ -17,8 +16,6 @@ import {
 export default function Portfolio() {
   return (
     <div className="min-h-screen text-gray-900 dark:text-white relative">
-
-
       {/* Background */}
       <Background />
 
@@ -40,9 +37,6 @@ export default function Portfolio() {
 
         {/* Projects Section */}
         <ProjectsSection />
-
-        {/* Certificates Section */}
-        <CertificatesSection />
 
         {/* Testimonials Section */}
         <TestimonialsSection />
