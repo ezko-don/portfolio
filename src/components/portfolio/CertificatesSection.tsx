@@ -29,11 +29,7 @@ const certificates = [
     description: "Professional certification recognizing expertise and achievements in the field.",
     icon: "mdi:certificate-outline",
     color: "from-orange-500 to-red-600",
-    badge: {
-      image: "/Certificate 0007 - Esther Zawadi.pdf",
-      alt: "Certificate 0007 - Esther Zawadi",
-      link: "/Certificate 0007 - Esther Zawadi.pdf"
-    }
+    certificateLink: "/Certificate 0007 - Esther Zawadi.pdf"
   },
   {
     title: "Bachelor of Business Information Technology",
@@ -111,6 +107,11 @@ export default function CertificatesSection() {
                         height={40}
                         className="rounded-full"
                       />
+                    ) : cert.certificateLink ? (
+                      <Icon
+                        icon={cert.icon}
+                        className="text-white text-3xl"
+                      />
                     ) : (
                       <Icon
                         icon={cert.icon}
@@ -145,6 +146,17 @@ export default function CertificatesSection() {
                     >
                       <Icon icon="solar:link-bold" className="mr-1" />
                       View Badge
+                    </Link>
+                  )}
+                  {cert.certificateLink && (
+                    <Link
+                      href={cert.certificateLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
+                    >
+                      <Icon icon="solar:download-bold" className="mr-1" />
+                      Download Certificate
                     </Link>
                   )}
                 </div>
