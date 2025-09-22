@@ -24,6 +24,24 @@ const experience = [
     technologies: ["PHP", "Laravel", "Cloud Infrastructure", "System Development", "Database Optimization", "Knowledge Management"]
   },
   {
+    role: "Volunteer ICT Officer",
+    company: "NEP Kenya",
+    period: "2023 - Present",
+    type: "Volunteer",
+    companyIcon: "mdi:heart-outline",
+    companyColor: "from-green-500 to-blue-600",
+    description: "Volunteering as an ICT Officer at NEP Kenya, providing technical support and digital solutions to enhance organizational operations and community outreach programs.",
+    achievements: [
+      "Providing technical support for organizational IT infrastructure",
+      "Developing digital solutions to improve operational efficiency",
+      "Supporting community outreach through technology initiatives",
+      "Maintaining and troubleshooting computer systems and networks",
+      "Training staff on digital tools and best practices",
+      "Contributing to technology strategy and implementation"
+    ],
+    technologies: ["IT Support", "System Administration", "Digital Solutions", "Community Outreach", "Training", "Network Management"]
+  },
+  {
     role: "Founder & Community Leader",
     company: "TechQueens254",
     period: "2023 - Present",

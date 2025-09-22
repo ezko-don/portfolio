@@ -22,6 +22,20 @@ const certificates = [
     }
   },
   {
+    title: "Certificate 0007 - Esther Zawadi",
+    issuer: "Professional Certification",
+    date: "2024",
+    type: "Professional Certificate",
+    description: "Professional certification recognizing expertise and achievements in the field.",
+    icon: "mdi:certificate-outline",
+    color: "from-orange-500 to-red-600",
+    badge: {
+      image: "/Certificate 0007 - Esther Zawadi.pdf",
+      alt: "Certificate 0007 - Esther Zawadi",
+      link: "/Certificate 0007 - Esther Zawadi.pdf"
+    }
+  },
+  {
     title: "Bachelor of Business Information Technology",
     issuer: "Strathmore University",
     date: "Current",
