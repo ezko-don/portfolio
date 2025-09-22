@@ -6,7 +6,23 @@ import SectionHeader from "./SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
 
-const certificates = [
+interface Certificate {
+  title: string;
+  issuer: string;
+  date: string;
+  type: string;
+  description: string;
+  icon: string;
+  color: string;
+  badge?: {
+    image: string;
+    alt: string;
+    link: string;
+  };
+  certificateLink?: string;
+}
+
+const certificates: Certificate[] = [
   {
     title: "Build Apps with Flutter",
     issuer: "Google",

@@ -15,6 +15,14 @@ type Course = {
 export default function CoursesSection() {
   const courses: Course[] = [
     {
+      title: "Certificate 0007 - Esther Zawadi",
+      institution: "Professional Certification",
+      year: "2024",
+      description: "Professional certification recognizing expertise and achievements in the field.",
+      badge: "https://img.shields.io/badge/Certificate-FF6B35?style=for-the-badge&logo=certificate&logoColor=white",
+      certificateUrl: "Certificate 0007 - Esther Zawadi.pdf"
+    },
+    {
       title: "Flutter Development",
       institution: "Google Developers",
       year: "2024",
