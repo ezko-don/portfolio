@@ -138,57 +138,6 @@ export default function OverviewSection() {
                   </div>
                 </div>
               </div>
-
-              {/* Professional Roles Grid */}
-              <div className="grid md:grid-cols-1 gap-4 md:gap-6">
-                <motion.div
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-orange-50/80 to-amber-100/50 dark:from-orange-950/30 dark:to-amber-900/20 backdrop-blur-sm border border-orange-200/50 dark:border-orange-800/30 shadow-xl flex flex-col"
-                >
-                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <div className="p-2 md:p-3 bg-orange-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:leaf-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Contracted Engineer</h4>
-                      <p className="text-orange-600 dark:text-orange-400 font-medium text-sm md:text-base">ITEDA Solutions</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Current</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Building the digital platforms behind ITEDA&apos;s smart solar crop dryer technology for an agricultural IoT company.
-                  </p>
-                  <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
-                    <Icon icon="solar:shield-check-bold" className="text-orange-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-orange-600 dark:text-orange-400">IoT Engineering</span>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-teal-50/80 to-cyan-100/50 dark:from-teal-950/30 dark:to-cyan-900/20 backdrop-blur-sm border border-teal-200/50 dark:border-teal-800/30 shadow-xl flex flex-col"
-                >
-                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <div className="p-2 md:p-3 bg-teal-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:truck-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">CMO & Lead Developer</h4>
-                      <p className="text-teal-600 dark:text-teal-400 font-medium text-sm md:text-base">CATATU Logistics</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Current</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Leading marketing strategy and building the core platform for a student-led transport startup.
-                  </p>
-                  <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
-                    <Icon icon="solar:shield-check-bold" className="text-teal-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-teal-600 dark:text-teal-400">Marketing &amp; Development</span>
-                  </div>
-                </motion.div>
-              </div>
             </div>
           </motion.div>
 
