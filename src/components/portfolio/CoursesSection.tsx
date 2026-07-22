@@ -46,30 +46,6 @@ export default function CoursesSection() {
       badge: "https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white",
       certificateUrl: "#" // Replace with your actual certificate URL
     },
-    {
-      title: "Laravel Framework",
-      institution: "Laravel Certification",
-      year: "2024",
-      description: "Became proficient in Laravel framework, mastering Eloquent ORM, Blade templating, and building robust web applications.",
-      badge: "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white",
-      certificateUrl: "#" // Replace with your actual certificate URL
-    },
-    {
-      title: "Node.js Backend Development",
-      institution: "The Node.js Foundation",
-      year: "2024",
-      description: "Gained expertise in building scalable server-side applications using Node.js, Express, and related technologies.",
-      badge: "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
-      certificateUrl: "#" // Replace with your actual certificate URL
-    },
-    {
-      title: "React Frontend Development",
-      institution: "Meta (Facebook)",
-      year: "2024",
-      description: "Mastered React.js for building interactive user interfaces, including hooks, context API, and modern React patterns.",
-      badge: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-      certificateUrl: "#" // Replace with your actual certificate URL
-    }
   ];
 
   const itemVariants = {
