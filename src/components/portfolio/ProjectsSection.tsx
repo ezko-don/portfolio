@@ -40,39 +40,6 @@ const projects = [
     clientType: "Institution"
   },
   {
-    title: "Personal Portfolio Website",
-    subtitle: "Modern Developer Portfolio",
-    description: "A modern, responsive portfolio website showcasing my projects, skills, and professional journey. Built with Next.js and featuring a beautiful UI with smooth animations.",
-    features: [
-      "Modern and responsive design",
-      "Dark/light mode support",
-      "Smooth page transitions and animations",
-      "Interactive tech stack showcase",
-      "Project portfolio with live demos",
-      "Professional experience timeline",
-      "Contact form integration",
-      "SEO optimized content"
-    ],
-    deliverables: [
-      "Responsive portfolio website",
-      "Project showcase section",
-      "Skills and experience display",
-      "Contact information integration",
-      "Performance optimized build",
-      "Cross-browser compatibility",
-      "Mobile-first design"
-    ],
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React", "Vercel"],
-    github: "https://github.com/ezko-don/portfolio",
-    live: "https://estherzawadi.vercel.app",
-    gradient: "from-pink-500 to-purple-500",
-    status: "Live",
-    category: "Personal Website",
-    highlight: "Latest",
-    timeline: "2 weeks",
-    clientType: "Personal"
-  },
-  {
     title: "NEP Kenya",
     subtitle: "National Environment Platform - Kenya",
     description: "The National Environment Platform Kenya (NEP-Kenya) is a multi-stakeholder platform that brings together diverse actors to advocate for environmental conservation, sustainable development, and climate action in Kenya.",
@@ -106,37 +73,90 @@ const projects = [
     clientType: "Environmental Organization"
   },
   {
-    title: "Tech Queens 254",
-    subtitle: "Women in Tech Community Platform",
-    description: "A dynamic platform for the Tech Queens 254 community, empowering young women in technology through coding education, mentorship, and networking opportunities.",
+    title: "ITEDA Solar Dryer Management Platform",
+    subtitle: "IoT Monitoring Platform for Smart Solar Crop Dryers",
+    description: "A remote monitoring and management platform for ITEDA Solutions' smart solar crop dryers, providing real-time sensor data, alerts, and analytics that help agricultural operators optimize drying performance and reduce post-harvest losses.",
     features: [
-      "Community member profiles and networking",
-      "Event management and registration",
-      "Resource library for learning materials",
-      "Mentorship program matching system",
-      "Blog and success stories section",
-      "Workshop and training schedules",
-      "Community forum and discussions",
-      "Project showcase gallery"
+      "Real-time temperature, humidity, and power consumption monitoring",
+      "Automated alerts for temperature anomalies, power issues, and maintenance needs",
+      "Data visualization and trend analysis for dryer performance",
+      "Data export for further analysis and reporting",
+      "User account creation and dashboard access",
+      "Remote operational oversight of connected solar dryers"
     ],
     deliverables: [
-      "Community platform website",
-      "Member management system",
-      "Event booking system",
-      "Resource management",
-      "Mentorship matching algorithm",
-      "Mobile-responsive design",
-      "Social media integration"
+      "IoT sensor data dashboard",
+      "Real-time monitoring and alerting system",
+      "Performance analytics and reporting tools",
+      "User authentication and account management",
+      "Responsive web interface"
     ],
-    tech: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap", "REST API", "Social Media APIs"],
-    github: "https://github.com/ezko-don/techqueens254",
-    live: "https://techqueens254.org",
-    gradient: "from-purple-500 to-pink-500",
+    tech: ["Next.js", "TypeScript", "IoT Integration", "Real-time Data", "Tailwind CSS", "Vercel"],
+    github: "#",
+    live: "https://iteda-solutions-dryers-platform.vercel.app/",
+    gradient: "from-orange-500 to-amber-500",
     status: "Live",
-    category: "Community Platform",
+    category: "IoT Platform",
     highlight: "Featured",
-    timeline: "3 months",
-    clientType: "Non-Profit"
+    timeline: "Ongoing",
+    clientType: "Agritech Startup"
+  },
+  {
+    title: "ITEDA Solutions Website",
+    subtitle: "Agricultural IoT Company Website",
+    description: "The official website for ITEDA Solutions, an agricultural IoT company building smart, sustainable solar crop dryers, showcasing the company's mission, products, and impact for farmers seeking affordable, climate-smart technology.",
+    features: [
+      "Company mission, vision, and values presentation",
+      "Smart Solar Crop Dryer product showcase",
+      "Contact form for customer inquiries",
+      "Social media integration (GitHub, LinkedIn, X)",
+      "Responsive, modern design"
+    ],
+    deliverables: [
+      "Marketing website",
+      "Product information pages",
+      "Contact and inquiry system",
+      "Social media integration",
+      "Mobile-responsive design"
+    ],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    github: "#",
+    live: "https://iteda-website.vercel.app/",
+    gradient: "from-green-500 to-lime-500",
+    status: "Live",
+    category: "Company Website",
+    highlight: "",
+    timeline: "Ongoing",
+    clientType: "Agritech Startup"
+  },
+  {
+    title: "Key Management System",
+    subtitle: "Institutional Key Tracking & Access Platform",
+    description: "A digital key management system built for Strathmore University to track, issue, and return physical keys across departments, replacing manual logbooks with an auditable, role-based workflow.",
+    features: [
+      "Key issuance and return tracking",
+      "User role-based access control",
+      "Key holder history and audit trail",
+      "Department and room key assignment",
+      "Automated notifications for overdue keys",
+      "Reporting and analytics dashboard"
+    ],
+    deliverables: [
+      "Key tracking platform",
+      "Admin and user dashboards",
+      "Audit trail and reporting module",
+      "Role-based access control system",
+      "Mobile-responsive interface"
+    ],
+    tech: ["PHP", "Laravel", "MySQL", "JavaScript", "Bootstrap", "REST API"],
+    github: "#",
+    live: "#",
+    gradient: "from-blue-500 to-indigo-500",
+    status: "Completed",
+    category: "Web Application",
+    highlight: "",
+    timeline: "2 months",
+    clientType: "Institution"
   }
 ];
 

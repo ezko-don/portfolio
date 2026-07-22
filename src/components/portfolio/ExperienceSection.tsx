@@ -24,6 +24,54 @@ const experience = [
     technologies: ["PHP", "Laravel", "Cloud Infrastructure", "System Development", "Database Optimization", "Knowledge Management"]
   },
   {
+    role: "Contracted Engineer",
+    company: "ITEDA Solutions",
+    period: "2025 - Present",
+    type: "Contract",
+    companyIcon: "solar:leaf-bold",
+    companyColor: "from-orange-500 to-amber-600",
+    description: "Contracted engineer at ITEDA Solutions, an agricultural IoT company, building the digital platforms behind their smart solar crop dryer technology.",
+    achievements: [
+      "Built and deployed the ITEDA Solar Dryer Management Platform for real-time IoT monitoring",
+      "Developed and maintain the ITEDA Solutions company website",
+      "Implemented real-time sensor data monitoring, alerting, and analytics features",
+      "Collaborate with the ITEDA team on product and engineering decisions"
+    ],
+    technologies: ["Next.js", "TypeScript", "IoT Integration", "Tailwind CSS", "Vercel"]
+  },
+  {
+    role: "CMO & Lead Developer",
+    company: "CATATU Logistics",
+    period: "2025 - Present",
+    type: "Leadership",
+    companyIcon: "mdi:truck-delivery",
+    companyColor: "from-teal-500 to-cyan-600",
+    description: "Serving as CMO and Lead Developer at CATATU, a student-led transport platform, overseeing marketing strategy alongside the technical build of the product.",
+    achievements: [
+      "Leading marketing strategy and brand growth as Chief Marketing Officer",
+      "Architecting and developing the core transport platform as Lead Developer",
+      "Driving student user adoption and engagement",
+      "Bridging business strategy and technical execution"
+    ],
+    technologies: ["Marketing Strategy", "Product Development", "Web Development", "Leadership"]
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "Strathmore University - ICT-EAS",
+    period: "October 2025 - May 2026",
+    type: "Internship",
+    companyIcon: "mdi:laptop",
+    companyColor: "from-cyan-500 to-blue-600",
+    description: "Completed a software engineering internship with Strathmore University's ICT Enterprise Application Services (ICT-EAS) team, contributing to enterprise software development and systems support.",
+    achievements: [
+      "Contributed to development and maintenance of enterprise applications used across the university",
+      "Collaborated with the ICT-EAS team on software development tasks and system support",
+      "Gained hands-on experience with enterprise software development practices",
+      "Supported troubleshooting and enhancement of internal systems"
+    ],
+    technologies: ["PHP", "Laravel", "MySQL", "Enterprise Systems", "Software Development"]
+  },
+  {
     role: "Volunteer ICT Officer",
     company: "NEP Kenya",
     period: "2023 - Present",

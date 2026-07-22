@@ -24,6 +24,31 @@ interface Certificate {
 
 const certificates: Certificate[] = [
   {
+    title: "Carbon and ESG Analysis",
+    issuer: "University of Cambridge Online × Localized",
+    date: "May 2026",
+    type: "Professional Certificate",
+    description: "Completed the Carbon and ESG Analysis Online Programme, covering carbon accounting and ESG analysis fundamentals.",
+    icon: "solar:leaf-bold",
+    color: "from-green-500 to-teal-600",
+    badge: {
+      image: "/images/certificates/carbon-esg-badge.png",
+      alt: "University of Cambridge Online in partnership with Localized - Carbon and ESG Analyst badge",
+      link: "/certificates/Cambridge_Carbon_ESG_Analysis_Certificate.pdf"
+    },
+    certificateLink: "/certificates/Cambridge_Carbon_ESG_Analysis_Certificate.pdf"
+  },
+  {
+    title: "AI Essentials for Professionals",
+    issuer: "Moringa School",
+    date: "May 2026",
+    type: "Professional Certificate",
+    description: "Completed the AI Essentials for Professionals course covering generative AI concepts and applications.",
+    icon: "mdi:robot-outline",
+    color: "from-purple-500 to-indigo-600",
+    certificateLink: "/certificates/Moringa_AI_Essentials_Certificate.pdf"
+  },
+  {
     title: "Build Apps with Flutter",
     issuer: "Google",
     date: "June 2025",

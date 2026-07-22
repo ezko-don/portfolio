@@ -56,6 +56,14 @@ const techStackData: Record<string, TechItem[]> = {
       description: "PHP web application framework with elegant syntax",
       yearsUsed: 3
     },
+    {
+      name: "Odoo",
+      icon: "simple-icons:odoo",
+      level: "Intermediate",
+      category: "Backend",
+      description: "Open-source ERP and business application platform",
+      yearsUsed: 1
+    },
   ],
   "Frontend": [
     {

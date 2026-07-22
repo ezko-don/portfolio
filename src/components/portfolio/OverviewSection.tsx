@@ -95,7 +95,9 @@ export default function OverviewSection() {
                       A passionate <span className="font-bold text-pink-600 dark:text-pink-400">Technology Professional</span> at
                       <span className="font-bold text-purple-600 dark:text-purple-400">
                         &nbsp;Strathmore University</span>, working as a
-                      <span className="font-bold text-pink-600 dark:text-pink-400">&nbsp;Knowledge Manager and System Developer</span>.
+                      <span className="font-bold text-pink-600 dark:text-pink-400">&nbsp;Knowledge Manager and System Developer</span>, while also serving as a
+                      <span className="font-bold text-orange-600 dark:text-orange-400">&nbsp;Contracted Engineer at ITEDA Solutions</span> and
+                      <span className="font-bold text-teal-600 dark:text-teal-400">&nbsp;CMO &amp; Lead Developer at CATATU Logistics</span>.
                     </p>
                   </div>
 
@@ -106,10 +108,13 @@ export default function OverviewSection() {
                         Working as a Knowledge Manager and System Developer at Strathmore University, I combine technical expertise with business acumen to deliver innovative solutions.
                       </p>
                       <p className="text-gray-600 dark:text-gray-400">
+                        As a Contracted Engineer at ITEDA Solutions, an agricultural IoT company, I build the platforms behind their smart solar crop dryer technology. I also serve as CMO &amp; Lead Developer at CATATU Logistics, a student-led transport platform, where I lead both marketing strategy and product development.
+                      </p>
+                      <p className="text-gray-600 dark:text-gray-400">
                         As the founder and leader of TechQueens254, I&apos;m passionate about empowering women in technology. Our community provides a platform for learning, networking, and growth for female tech enthusiasts in Kenya.
                       </p>
                       <p className="text-gray-600 dark:text-gray-400">
-                        My focus areas include system development, knowledge management, and cloud infrastructure, with a strong emphasis on creating practical solutions that bridge technology and business needs.
+                        My focus areas include system development, knowledge management, IoT integration, and cloud infrastructure, with a strong emphasis on creating practical solutions that bridge technology and business needs.
                       </p>
                     </div>
                   </div>
@@ -162,6 +167,54 @@ export default function OverviewSection() {
                   <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
                     <Icon icon="solar:shield-check-bold" className="text-purple-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
                     <span className="font-semibold text-purple-600 dark:text-purple-400">Tech Professional</span>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.02, y: -5 }}
+                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-orange-50/80 to-amber-100/50 dark:from-orange-950/30 dark:to-amber-900/20 backdrop-blur-sm border border-orange-200/50 dark:border-orange-800/30 shadow-xl flex flex-col"
+                >
+                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
+                    <div className="p-2 md:p-3 bg-orange-500 rounded-lg md:rounded-xl shadow-lg">
+                      <Icon icon="solar:leaf-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Contracted Engineer</h4>
+                      <p className="text-orange-600 dark:text-orange-400 font-medium text-sm md:text-base">ITEDA Solutions</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Current</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
+                    Building the digital platforms behind ITEDA&apos;s smart solar crop dryer technology for an agricultural IoT company.
+                  </p>
+                  <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
+                    <Icon icon="solar:shield-check-bold" className="text-orange-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
+                    <span className="font-semibold text-orange-600 dark:text-orange-400">IoT Engineering</span>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.02, y: -5 }}
+                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-teal-50/80 to-cyan-100/50 dark:from-teal-950/30 dark:to-cyan-900/20 backdrop-blur-sm border border-teal-200/50 dark:border-teal-800/30 shadow-xl flex flex-col"
+                >
+                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
+                    <div className="p-2 md:p-3 bg-teal-500 rounded-lg md:rounded-xl shadow-lg">
+                      <Icon icon="solar:truck-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">CMO & Lead Developer</h4>
+                      <p className="text-teal-600 dark:text-teal-400 font-medium text-sm md:text-base">CATATU Logistics</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Current</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
+                    Leading marketing strategy and building the core platform for a student-led transport startup.
+                  </p>
+                  <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
+                    <Icon icon="solar:shield-check-bold" className="text-teal-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
+                    <span className="font-semibold text-teal-600 dark:text-teal-400">Marketing &amp; Development</span>
                   </div>
                 </motion.div>
               </div>
