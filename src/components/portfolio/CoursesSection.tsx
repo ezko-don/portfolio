@@ -15,6 +15,22 @@ type Course = {
 export default function CoursesSection() {
   const courses: Course[] = [
     {
+      title: "Carbon and ESG Analysis",
+      institution: "University of Cambridge Online × Localized",
+      year: "2026",
+      description: "Completed the Carbon and ESG Analysis Online Programme, covering carbon accounting and ESG analysis fundamentals.",
+      badge: "/images/certificates/carbon-esg-badge.png",
+      certificateUrl: "/certificates/Cambridge_Carbon_ESG_Analysis_Certificate.pdf"
+    },
+    {
+      title: "AI Essentials for Professionals",
+      institution: "Moringa School",
+      year: "2026",
+      description: "Completed the AI Essentials for Professionals course covering generative AI concepts and applications.",
+      badge: "https://img.shields.io/badge/Generative_AI-6C4AB6?style=for-the-badge&logo=openai&logoColor=white",
+      certificateUrl: "/certificates/Moringa_AI_Essentials_Certificate.pdf"
+    },
+    {
       title: "Certificate 0007 - Esther Zawadi",
       institution: "Professional Certification",
       year: "2024",

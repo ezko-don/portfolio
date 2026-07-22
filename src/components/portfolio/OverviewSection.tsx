@@ -92,21 +92,16 @@ export default function OverviewSection() {
                       Hello, I&apos;m Esther Kadenge
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
-                      A passionate <span className="font-bold text-pink-600 dark:text-pink-400">Technology Professional</span> at
-                      <span className="font-bold text-purple-600 dark:text-purple-400">
-                        &nbsp;Strathmore University</span>, working as a
-                      <span className="font-bold text-pink-600 dark:text-pink-400">&nbsp;Knowledge Manager and System Developer</span>, while also serving as a
+                      A passionate <span className="font-bold text-pink-600 dark:text-pink-400">Technology Professional</span>, working as a
                       <span className="font-bold text-orange-600 dark:text-orange-400">&nbsp;Contracted Engineer at ITEDA Solutions</span> and
-                      <span className="font-bold text-teal-600 dark:text-teal-400">&nbsp;CMO &amp; Lead Developer at CATATU Logistics</span>.
+                      <span className="font-bold text-teal-600 dark:text-teal-400">&nbsp;CMO &amp; Lead Developer at CATATU Logistics</span>, while pursuing my BBIT degree at
+                      <span className="font-bold text-purple-600 dark:text-purple-400">&nbsp;Strathmore University</span>.
                     </p>
                   </div>
 
                   {/* About Content */}
                   <div className="space-y-3 md:space-y-4">
                     <div className="space-y-4">
-                      <p className="text-gray-600 dark:text-gray-400">
-                        Working as a Knowledge Manager and System Developer at Strathmore University, I combine technical expertise with business acumen to deliver innovative solutions.
-                      </p>
                       <p className="text-gray-600 dark:text-gray-400">
                         As a Contracted Engineer at ITEDA Solutions, an agricultural IoT company, I build the platforms behind their smart solar crop dryer technology. I also serve as CMO &amp; Lead Developer at CATATU Logistics, a student-led transport platform, where I lead both marketing strategy and product development.
                       </p>
@@ -146,30 +141,6 @@ export default function OverviewSection() {
 
               {/* Professional Roles Grid */}
               <div className="grid md:grid-cols-1 gap-4 md:gap-6">
-                <motion.div
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/80 to-purple-100/50 dark:from-purple-950/30 dark:to-purple-900/20 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/30 shadow-xl flex flex-col"
-                >
-                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <div className="p-2 md:p-3 bg-purple-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:laptop-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Knowledge Manager & System Developer</h4>
-                      <p className="text-purple-600 dark:text-purple-400 font-medium text-sm md:text-base">Strathmore University</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Current</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Leading knowledge management initiatives and developing innovative systems while focusing on cloud infrastructure and database optimization.
-                  </p>
-                  <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
-                    <Icon icon="solar:shield-check-bold" className="text-purple-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-purple-600 dark:text-purple-400">Tech Professional</span>
-                  </div>
-                </motion.div>
-
                 <motion.div
                   variants={itemVariants}
                   whileHover={{ scale: 1.02, y: -5 }}

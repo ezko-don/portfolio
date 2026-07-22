@@ -8,18 +8,18 @@ const experience = [
   {
     role: "Knowledge Manager & System Developer",
     company: "Strathmore University",
-    period: "2024 - Present",
+    period: "2024 - May 2026",
     type: "Full-Time",
     companyIcon: "mdi:school",
     companyColor: "from-pink-500 to-purple-600",
-    description: "Leading knowledge management initiatives and developing software solutions while managing cloud infrastructure at Strathmore University. Responsible for both technical development and knowledge management strategies.",
+    description: "Led knowledge management initiatives and developed software solutions while managing cloud infrastructure at Strathmore University. Responsible for both technical development and knowledge management strategies.",
     achievements: [
       "Architected and deployed Equipment Management & Tracking System serving 15+ staff",
       "Achieved 40% reduction in manual tracking errors through system implementation",
       "Optimized database performance by 25% through query optimization",
-      "Managing and optimizing institutional cloud storage systems",
-      "Leading system integration and optimization projects",
-      "Implementing comprehensive knowledge management strategies"
+      "Managed and optimized institutional cloud storage systems",
+      "Led system integration and optimization projects",
+      "Implemented comprehensive knowledge management strategies"
     ],
     technologies: ["PHP", "Laravel", "Cloud Infrastructure", "System Development", "Database Optimization", "Knowledge Management"]
   },
