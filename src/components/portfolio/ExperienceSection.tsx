@@ -7,12 +7,12 @@ import SectionHeader from "./SectionHeader";
 const experience = [
   {
     role: "Knowledge Manager & System Developer",
-    company: "Strathmore University",
+    company: "Strathmore University - Communications Office",
     period: "2024 - May 2026",
     type: "Full-Time",
     companyIcon: "mdi:school",
     companyColor: "from-pink-500 to-purple-600",
-    description: "Led knowledge management initiatives and developed software solutions while managing cloud infrastructure at Strathmore University. Responsible for both technical development and knowledge management strategies.",
+    description: "Led knowledge management initiatives and developed software solutions while managing cloud infrastructure at the Strathmore University Communications Office. Responsible for both technical development and knowledge management strategies.",
     achievements: [
       "Architected and deployed Equipment Management & Tracking System serving 15+ staff",
       "Achieved 40% reduction in manual tracking errors through system implementation",

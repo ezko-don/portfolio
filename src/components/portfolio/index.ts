@@ -6,6 +6,7 @@ export { default as CVSection } from './CVSection';
 export { default as ExperienceSection } from './ExperienceSection';
 export { default as Footer } from './Footer';
 export { default as HeroSection } from './HeroSection';
+export { default as MediaSection } from './MediaSection';
 // Removed CertificatesSection export
 export { default as Navigation } from './Navigation';
 export { default as OverviewSection } from './OverviewSection';

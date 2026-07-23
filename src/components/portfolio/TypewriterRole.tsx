@@ -9,10 +9,10 @@ export default function TypewriterRole() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const roles = useMemo(() => [
-    "Student at Strathmore University",
-    "Technology Intern",
-    "Software Developer",
-    "Tech Enthusiast"
+    "BBIT Student at Strathmore University",
+    "Contracted Engineer at ITEDA Solutions",
+    "CMO & Lead Developer at CATATU Logistics",
+    "Software Developer"
   ], []);
 
   // Typewriter effect

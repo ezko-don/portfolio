@@ -60,8 +60,8 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          A passionate <span className="text-pink-500">student</span> at <span className="text-purple-500">Strathmore University</span>,
-          currently <span className="text-pink-500">interning</span> at the institution.
+          A passionate technology professional pursuing a <span className="text-pink-500">BBIT degree</span> at <span className="text-purple-500">Strathmore University</span>,
+          currently working as a <span className="text-pink-500">Contracted Engineer</span> at ITEDA Solutions and <span className="text-pink-500">CMO &amp; Lead Developer</span> at CATATU Logistics.
         </motion.p>
 
         {/* Social Links */}
@@ -103,24 +103,6 @@ export default function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Status */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1.4 }}
-          className="inline-flex items-center gap-2 px-4 py-2 bg-pink-50/80 dark:bg-pink-900/20 border border-pink-200/50 dark:border-pink-800/50 rounded-full backdrop-blur-sm"
-        >
-          <motion.div
-            className="w-2 h-2 bg-pink-500 rounded-full"
-            animate={{ scale: [1, 1.4, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
-          <Link href="#contact">
-            <span className="text-pink-700 dark:text-pink-300 text-sm font-medium">
-              Knowledge Manager & System Developer at Strathmore University
-            </span>
-          </Link>
-        </motion.div>
       </motion.section>
 
       {/* Scroll for more indicator */}

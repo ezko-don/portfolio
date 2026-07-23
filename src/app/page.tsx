@@ -7,6 +7,7 @@ import {
   ExperienceSection,
   Footer,
   HeroSection,
+  MediaSection,
   Navigation,
   OverviewSection,
   ProjectsSection,
@@ -35,6 +36,9 @@ export default function Portfolio() {
 
         {/* Experience Section */}
         <ExperienceSection />
+
+        {/* Media & Highlights Section */}
+        <MediaSection />
 
         {/* Courses & Certifications Section */}
         <CoursesSection />
