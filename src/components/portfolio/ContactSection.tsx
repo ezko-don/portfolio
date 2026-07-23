@@ -43,7 +43,7 @@ export default function ContactSection() {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: 'esther.kadenge@strathmore.edu', // Your email
+          to_email: 'estherzawadi887@gmail.com', // Your email
         },
         publicKey
       );
@@ -223,7 +223,7 @@ export default function ContactSection() {
                     <span className="font-medium">Failed to send message</span>
                   </div>
                   <p className="text-red-600 text-left dark:text-red-500 text-sm mt-1">
-                    Please try again or contact me directly at esther.kadenge@strathmore.edu
+                    Please try again or contact me directly at estherzawadi887@gmail.com
                   </p>
                   {/* add a button to close the message */}
                   <button
@@ -276,7 +276,7 @@ export default function ContactSection() {
           <p className="text-gray-600 dark:text-gray-400 mb-6">Or connect with me on social media:</p>
           <div className="flex justify-center space-x-6 mb-8">
             <Link
-              href="mailto:esther.kadenge@strathmore.edu"
+              href="mailto:estherzawadi887@gmail.com"
               className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
             >
               <Icon icon="solar:letter-bold" width={24} height={24} />

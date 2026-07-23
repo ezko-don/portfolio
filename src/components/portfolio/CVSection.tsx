@@ -160,11 +160,11 @@ export default function CVSection() {
             </h3>
             <div className="flex justify-center space-x-6 mb-6">
               <Link
-                href="mailto:e.zawadi@strathmore.edu"
+                href="mailto:estherzawadi887@gmail.com"
                 className="flex items-center gap-2 text-gray-600 hover:text-pink-500 dark:text-gray-400 transition-colors"
               >
                 <Icon icon="solar:letter-bold" />
-                e.zawadi@strathmore.edu
+                estherzawadi887@gmail.com
               </Link>
               <Link
                 href="tel:+254708314494"

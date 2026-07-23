@@ -173,9 +173,9 @@ export default function OverviewSection() {
                 Let&apos;s Connect
               </h4>
               <div className="space-y-4">
-                <a href="mailto:esther.kadenge@strathmore.edu" className="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-pink-500">
+                <a href="mailto:estherzawadi887@gmail.com" className="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-pink-500">
                   <Icon icon="solar:letter-bold" className="w-5 h-5" />
-                  <span>esther.kadenge@strathmore.edu</span>
+                  <span>estherzawadi887@gmail.com</span>
                 </a>
                 <a href="tel:+254708314494" className="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-pink-500">
                   <Icon icon="solar:phone-bold" className="w-5 h-5" />
